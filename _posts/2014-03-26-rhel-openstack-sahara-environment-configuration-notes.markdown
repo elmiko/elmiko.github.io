@@ -144,6 +144,10 @@ Horizon
     `ALLOWED_HOSTS`, add the proper `SAHARA_URL`, and add 
     `SAHARA_USE_NEUTRON=True`.
 
+    *Update* I also copied the `SECRET_KEY` value from the
+    `/etc/openstack-dashboard/local_settings` file to help reduce
+    inconsistencies if running both Horizon dashboards at the same time.
+
 6. modify `openstack_dashboard/settings.py` for sahara-dashboard [[5]]
 
     The modifications I made are the same as suggested in the guide; add
@@ -154,6 +158,14 @@ Horizon
 different port than the base install of horizon
 
 8. point a browser at `http://ip:port` defined in the previous step
+
+
+- - -
+
+Updates
+----
+
+* (03/31/14) added a note about copying the SECRET\_KEY to Horizon install.
 
 
 - - -

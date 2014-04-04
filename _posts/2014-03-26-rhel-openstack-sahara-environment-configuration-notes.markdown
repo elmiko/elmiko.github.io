@@ -98,6 +98,9 @@ virtualenv.
 
 8. start sahara, `sahara-api --config-file <sahara venv>/etc/sahara.conf`
 
+   *Update* This should be run as root, otherwise it will fail to use the proper net
+   namespace commands due to permissions.
+
 9. confirm it is working
 
     I confirmed this by sourcing the `keystonerc_admin`(as produced by 
@@ -166,7 +169,7 @@ Updates
 ----
 
 * (03/31/14) added a note about copying the SECRET\_KEY to Horizon install.
-
+* (04/04/14) added a note about running sahara-api as root.
 
 - - -
 

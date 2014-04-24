@@ -26,9 +26,9 @@ create the image for testing:
 I realize the `-i centos` isn't strictly needed, but I wanted to be thorough
 when testing the image creation.
 
-*note* There is an issue currently being resolved with diskimage-builder when
+*NOTE* There is an issue currently being resolved with diskimage-builder when
 creating CentOS images without the base element, for more information see
-[launchpad bug 1308224](https://bugs.launchpad.net/diskimage-builder/+bug/1308224).
+[bug 1308224](https://bugs.launchpad.net/diskimage-builder/+bug/1308224).
 
 Loading the Image
 ----

@@ -12,7 +12,7 @@ Creating the Image
 ----
 
 The images were created on a RHEL6 machine with SELinux disabled by changing
-`/etc/selinx/config` to contain `SELINX=disabled`. This machine
+`/etc/selinx/config` to contain `SELINUX=disabled`. This machine
 has access to the Optional channel as well as EPEL.
 
 The trunk of sahara-image-elements was used for image creation. The last commit

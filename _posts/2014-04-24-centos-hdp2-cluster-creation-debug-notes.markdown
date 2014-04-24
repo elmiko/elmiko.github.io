@@ -11,9 +11,15 @@ CentOS based Hadoop2 images.
 Creating the Image
 ----
 
-The images were created on a RHEL6 machine with SELinux disabled. This machine
-has access to the Optional channel as well as EPEL. I ran the following
-command to create the image for testing:
+The images were created on a RHEL6 machine with SELinux disabled by changing
+`/etc/selinx/config` to contain `SELINX=disabled`. This machine
+has access to the Optional channel as well as EPEL.
+
+The trunk of sahara-image-elements was used for image creation. The last commit
+of the repo used was `28a76fd0c0e7b5431c26728fe60185d79d65eff6`. The last
+commit of the diskimage-builder repo used by sahara-image-elements was
+`6b2a78f3abdcb7133ded96324f30907739f8f855`. I ran the following command to
+create the image for testing:
 
     $ sudo diskimage-create.sh -p hdp -i centos -v 2 -d
 

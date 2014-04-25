@@ -170,4 +170,15 @@ Even with all the ambari processing running the cluster does not leave
 `Waiting` status. There may be additional steps required to get the cluster
 into a working state. This is still being investigated.
 
-Updates to follow.
+**Updates**
+
+* 2014-04-25
+
+Attaching the log files for the ambari-agent from the master node, and the
+sahara log from the host machine. The file
+`/var/log/ambari-agent/ambari-agent.out` was empty as was the
+`/var/log/ambari-server` directory.
+
+[ambari-agent.log](https://gist.github.com/elmiko/5702648769c6d025cc05)
+
+[screen-sahara.log](https://gist.github.com/elmiko/3fe34fcd4e7b88415d25)

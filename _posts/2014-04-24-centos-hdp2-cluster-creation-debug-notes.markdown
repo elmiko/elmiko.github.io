@@ -182,3 +182,59 @@ sahara log from the host machine. The file
 [ambari-agent.log](https://gist.github.com/elmiko/5702648769c6d025cc05)
 
 [screen-sahara.log](https://gist.github.com/elmiko/3fe34fcd4e7b88415d25)
+
+* 2014-05-01
+
+Setting the proper floating ip configuration in Sahara allowed me to get past
+the `Waiting` status. This involved ensuring that the following were set
+`use_neutron=true`, `use_floating_ips=true`, and `use_namespaces=false`.
+
+In the version of devstack I am using these are mostly preconfigured. In the
+past I had been able to use the namespaces setting but apparently that is not
+working from my devstack.
+
+With these settings in place my cluster was able to move to the `Preparing`
+status.
+
+At this point I was able to ssh into the master node and run
+`ambari-server setup` as root. I chose the default options with the exception
+of the JDK. For that I chose the `Custom JDK` option and selected
+`/opt/jdk1.6.0_31` directory. This allowed the ambari-server to finish setting
+up.
+
+Next I ssh'd to the worker nodes and updated
+`/etc/ambari-agent/conf/ambari-agent.ini` to have the proper server address.
+All the workers had `localhost` as their server addresses.
+
+With both of these fixes in place the cluster started moving along once again.
+It became stopped in the `Configuring` status.
+
+Looking at the Sahara log files these is an exception happening with an
+attempt to get a repo file from the public internet. Here is the full
+exception stack:
+
+    Traceback (most recent call last):
+      File "/opt/stack/sahara/sahara/context.py", line 120, in _wrapper
+        func(*args, **kwargs)
+      File "/opt/stack/sahara/sahara/plugins/hdp/hadoopserver.py", line 41, in provision_ambari
+        self.install_rpms()
+      File "/opt/stack/sahara/sahara/plugins/hdp/saharautils.py", line 30, in call
+        return func(self, *args, **newkwargs)
+      File "/opt/stack/sahara/sahara/plugins/hdp/hadoopserver.py", line 58, in install_rpms
+        r.execute_command(rpm_cmd, run_as_root=True)
+      File "/opt/stack/sahara/sahara/utils/ssh_remote.py", line 367, in execute_command
+        get_stderr, raise_when_error)
+      File "/opt/stack/sahara/sahara/utils/ssh_remote.py", line 428, in _run_s
+        return self._run_with_log(func, timeout, *args, **kwargs)
+      File "/opt/stack/sahara/sahara/utils/ssh_remote.py", line 334, in _run_with_log
+        return self._run(func, *args, **kwargs)
+      File "/opt/stack/sahara/sahara/utils/ssh_remote.py", line 425, in _run
+        return procutils.run_in_subprocess(self.proc, func, args, kwargs)
+      File "/opt/stack/sahara/sahara/utils/procutils.py", line 52, in run_in_subprocess
+        raise SubprocessException(result['exception'])
+    SubprocessException: RemoteCommandException: Error during command execution: "curl -f -s -o /etc/yum.repos.d/ambari.repo http://s3.amazonaws.com/$
+    Return code: 6
+
+Full log here:
+
+[screen-sahara.log](https://gist.github.com/elmiko/2bff463963252038d401)

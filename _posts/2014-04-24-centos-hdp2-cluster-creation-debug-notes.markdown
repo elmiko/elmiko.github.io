@@ -235,6 +235,8 @@ exception stack:
     SubprocessException: RemoteCommandException: Error during command execution: "curl -f -s -o /etc/yum.repos.d/ambari.repo http://s3.amazonaws.com/$
     Return code: 6
 
-Full log here:
-
 [screen-sahara.log](https://gist.github.com/elmiko/2bff463963252038d401)
+
+[ambari-agent.log](https://gist.github.com/elmiko/a203792cdcc337bb2695)
+
+[ambari-server.log](https://gist.github.com/elmiko/b34a526b76bd764f5b3d)

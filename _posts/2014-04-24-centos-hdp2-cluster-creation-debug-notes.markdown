@@ -36,35 +36,7 @@ Loading the Image
 I am using the tip of [Devstack](http://devstack.org) trunk, installed as per
 the "Quick Start" instructions. This is the `local.conf` file I am using:
 
-    [[local|localrc]]
-    ADMIN_PASSWORD=openstack
-    DATABASE_PASSWORD=$ADMIN_PASSWORD
-    QPID_PASSWORD=$ADMIN_PASSWORD
-    SERVICE_PASSWORD=$ADMIN_PASSWORD
-    SERVICE_TOKEN=ca682f596-76f3-11e3-b3b2-e716f9080d50
-    FIXED_RANGE=172.31.1.0/24
-    NETWORK_GATEWAY=172.31.1.1
-    DEST=/opt/stack
-    LOGFILE=$DEST/logs/stack.sh.log
-    SCREEN_LOGDIR=$DEST/logs/screen
-    FLAT_INTERFACE=em1
-    HOST_IP=10.0.1.63
-    SWIFT_HASH=67a3d6b56c1f479c8b4e70ab5c2020f5
-    SWIFT_REPLICAS=1
-    RECLONE=yes
-    disable_service rabbit
-    enable_service qpid
-    disable_service n-net
-    enable_service q-svc
-    enable_service q-agt
-    enable_service q-dhcp
-    enable_service q-l3
-    enable_service q-meta
-    enable_service neutron
-    enable_service s-proxy s-object s-container s-account
-    enable_service heat h-api h-api-cfn h-api-cw h-eng
-    enable_service sahara
-    enable_service sahara-dashboard
+{% gist elmiko/ac1f8220eb3ec6020476 %}
 
 All of the following step were performed using the standard Horizon dashboard
 interface in the `Demo` project. I have registered a newly created keypair
@@ -127,25 +99,7 @@ resolved by setting SELinux to `Permissive` on the instance.
 
 All the nodes produce the same errors at the end of boot:
 
-    Starting ambari-server
-    ERROR: Exiting with exit code 1. 
-    REASON: Unable to detect a system user for Ambari Server.
-    - If this is a new setup, then run the "ambari-server setup" command to create the user
-    - If this is an upgrade of an existing setup, run the "ambari-server upgrade" command.
-    Refer to the Ambari documentation for more information on setup and upgrade.
-    Starting atd: [  OK  ]
-    /etc/rc3.d/S95hadoop-mapreduce-historyserver: line 40: /usr/lib/bigtop-utils/bigtop-detect-javahome: No such file or directory
-    Starting Hadoop historyserver:[  OK  ]
-    Error: JAVA_HOME is not set and could not be found.
-    /etc/rc3.d/S95hadoop-yarn-nodemanager: line 40: /usr/lib/bigtop-utils/bigtop-detect-javahome: No such file or directory
-    Starting Hadoop nodemanager:[  OK  ]
-    Error: JAVA_HOME is not set and could not be found.
-    /etc/rc3.d/S95hadoop-yarn-proxyserver: line 40: /usr/lib/bigtop-utils/bigtop-detect-javahome: No such file or directory
-    Starting Hadoop proxyserver:[  OK  ]
-    Error: JAVA_HOME is not set and could not be found.
-    /etc/rc3.d/S95hadoop-yarn-resourcemanager: line 40: /usr/lib/bigtop-utils/bigtop-detect-javahome: No such file or directory
-    Starting Hadoop resourcemanager:[  OK  ]
-    Error: JAVA_HOME is not set and could not be found.
+{% gist elmiko/3a2e2bd40d474d1d73f8 %}
 
 [Full boot log for master node](https://gist.github.com/elmiko/31294ea3a36f4f25c445)
 
@@ -170,7 +124,8 @@ Even with all the ambari processing running the cluster does not leave
 `Waiting` status. There may be additional steps required to get the cluster
 into a working state. This is still being investigated.
 
-**Updates**
+Updates
+----
 
 * 2014-04-25
 
@@ -213,30 +168,56 @@ Looking at the Sahara log files these is an exception happening with an
 attempt to get a repo file from the public internet. Here is the full
 exception stack:
 
-    Traceback (most recent call last):
-      File "/opt/stack/sahara/sahara/context.py", line 120, in _wrapper
-        func(*args, **kwargs)
-      File "/opt/stack/sahara/sahara/plugins/hdp/hadoopserver.py", line 41, in provision_ambari
-        self.install_rpms()
-      File "/opt/stack/sahara/sahara/plugins/hdp/saharautils.py", line 30, in call
-        return func(self, *args, **newkwargs)
-      File "/opt/stack/sahara/sahara/plugins/hdp/hadoopserver.py", line 58, in install_rpms
-        r.execute_command(rpm_cmd, run_as_root=True)
-      File "/opt/stack/sahara/sahara/utils/ssh_remote.py", line 367, in execute_command
-        get_stderr, raise_when_error)
-      File "/opt/stack/sahara/sahara/utils/ssh_remote.py", line 428, in _run_s
-        return self._run_with_log(func, timeout, *args, **kwargs)
-      File "/opt/stack/sahara/sahara/utils/ssh_remote.py", line 334, in _run_with_log
-        return self._run(func, *args, **kwargs)
-      File "/opt/stack/sahara/sahara/utils/ssh_remote.py", line 425, in _run
-        return procutils.run_in_subprocess(self.proc, func, args, kwargs)
-      File "/opt/stack/sahara/sahara/utils/procutils.py", line 52, in run_in_subprocess
-        raise SubprocessException(result['exception'])
-    SubprocessException: RemoteCommandException: Error during command execution: "curl -f -s -o /etc/yum.repos.d/ambari.repo http://s3.amazonaws.com/$
-    Return code: 6
+{% gist elmiko/57884135854c903028be %}
 
 [screen-sahara.log](https://gist.github.com/elmiko/2bff463963252038d401)
 
 [ambari-agent.log](https://gist.github.com/elmiko/a203792cdcc337bb2695)
 
 [ambari-server.log](https://gist.github.com/elmiko/b34a526b76bd764f5b3d)
+
+* 2014-05-08
+
+Made more progress in getting the cluster to configure itself with the
+following changes:
+
+Changed to using the `cloud-user` for logging into the instances as updates
+to sahara-image-elements have changed the default user.
+
+Commented out the `install_rpms` call in the `provision_ambari` method in
+`sahara/plugins/hdp/hadoopserver.py`. New code looks like:
+
+{% highlight python %}
+    def provision_ambari(self, ambari_info, cluster_spec):
+        #self.install_rpms()
+        global_config = cluster_spec.configurations['global']
+        jdk_path = global_config.get('java64_home')
+{% endhighlight %}
+
+Added a security group rule to allow ingress traffic on 8080 from 0.0.0.0/0.
+
+The next problem issue was the Nagios server installation which failed
+multiple times. Fortunately it seems that the cluster doesn't necessarily need
+it for creation. Removing the `NAGIOS_SERVER` from the master node allowed the
+cluster creation to make it further.
+
+After all the tasks were initialized the next step in the plugin is to install
+the Hadoop Swift integration. This attempts to download an rpm from Amazon S3
+which fails in disconnected mode. The Hadoop Swift integration rpm is loaded
+on the image during creation from sahara-image-elemnts, it can be found in
+`/opt/hdp-local-repos/hadoop-swift/`. It is not installed by default.
+
+* 2014-05-09
+
+I have added 2 patches to work around the remote installs. In the case of the
+rpm installed during `provision_ambari`, I have added a small piece to detect
+if the rpm is already installed. For the Hadoop Swift integration piece I have
+added a patch to detect the local version of the rpm and install that instead
+of hitting the internet.
+
+Here is a summary of the patches.
+
+{% gist elmiko/7c2207f872c9f291fab6 %}
+
+With these patches in place the cluster has progressed to the `Starting`
+status.

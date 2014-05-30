@@ -110,7 +110,7 @@ it is functional. I imagine this is not ready for production yet but it is an
 interesting proof of concept.
 
 There were two methodologies talked about for achieving the heartbeat failover
-mechanism. The main metholody made use of the Virtual Routing Redundancy
+mechanism. The main methodology made use of the Virtual Routing Redundancy
 Protocol with a modified Neutron server and L3 agents. The second methodology
 uses Dynamic Virtual Routers controlled by the Compute node in combination
 with the L3 heartbeat services. It was slightly difficult to understand

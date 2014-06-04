@@ -18,7 +18,7 @@ This was a nice design session about how the OpenStack developer community
 can work towards creating RESTful APIs that are more consistent across
 projects.
 
-Some of the main themes discussed were the need to create some sort of style
+One of the main themes discussed is the need to create some sort of style
 guide that could be used as a model for projects. There was also considerable
 talk of the need for consistency without creating a policing organization, 
 more of a "soft" enforcement.

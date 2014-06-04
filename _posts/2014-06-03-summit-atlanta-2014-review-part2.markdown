@@ -5,6 +5,8 @@ date:   2014-06-03
 categories: openstack
 ---
 
+*update 2014-06-04: added links to the talks*
+
 Welcome back! This is the continuation of my review of the Atlanta 2014
 OpenStack Summit. If you missed it, part 1 is available
 [here](http://elmiko.github.io/openstack/2014/05/21/summit-atlanta-2014-review-part1.html).
@@ -92,6 +94,8 @@ definitely opened my eyes.
 
 [Justin's blog post about Elephant Flow Mitigation](http://blogs.vmware.com/networkvirtualization/2014/02/elephant-flow-mitigation.html)
 
+[Watch the talk here](https://www.openstack.org/summit/openstack-summit-atlanta-2014/session-videos/presentation/open-vswitch-and-the-intelligent-edge)
+
 Linux Containers - NextGen Virtualization for Cloud
 ----
 *Boden Russell*
@@ -136,6 +140,8 @@ highly recommend it for anyone looking to gain a foothold into the
 technologies that make containers possible.
 
 [Boden's presentation](http://www.slideshare.net/BodenRussell/linux-containers-next-gen-virtualization-for-cloud-atl-summit-ar4-3-copy)
+
+[Watch the talk here](https://www.openstack.org/summit/openstack-summit-atlanta-2014/session-videos/presentation/linux-containers-nextgen-virtualization-for-cloud)
 
 Using ZeroVM and Swift to Build a Compute Enabled Storage Platform
 ----
@@ -186,6 +192,8 @@ include processing during those operations.
 
 [ZeroVM project](http://zerovm.org)
 
+[Watch the talk here](https://www.openstack.org/summit/openstack-summit-atlanta-2014/session-videos/presentation/using-zerovm-and-swift-to-build-a-compute-enabled-storage-platform)
+
 Introduction to OpenStack Trove: A Multi-database Deployment with MongoDB and MySQL
 ----
 *Michael Basnight and Doug Shelley*
@@ -216,6 +224,8 @@ and control operations. Virtual machine images can be pregenerated or
 provisioned at runtime, and commanded through the root controller node. In
 the end, the developers proposed the question "can Trove be a building block
 for every OpenStack service?"
+
+[Watch the talk here](https://www.openstack.org/summit/openstack-summit-atlanta-2014/session-videos/presentation/introduction-to-openstack-trove-a-multi-database-deployment-with-mongodb-and-mysql)
 
 Final Thoughts
 ----

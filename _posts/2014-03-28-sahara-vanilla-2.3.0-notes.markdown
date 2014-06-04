@@ -5,7 +5,7 @@ date:   2014-03-28
 categories: openstack sahara
 ---
 
-Building some stuff from the ground up using the REST API and httpie with
+Building some stuff from the ground up using the ReST API and httpie with
 canned json objects.
 
 Heavily inspired by the gating tests in [test\_vanilla\_two\_gating.py][v2gatepy]

@@ -10,12 +10,12 @@ OpenStack Summit. If you missed it, part 1 is available
 [here](http://elmiko.github.io/openstack/2014/05/21/summit-atlanta-2014-review-part1.html).
 
 
-Consistency across Openstack REST APIs
+Consistency across Openstack ReST APIs
 ----
 *Design session*
 
 This was a nice design session about how the OpenStack developer community
-can work towards creating RESTful APIs that are more consistent across
+can work towards creating ReSTful APIs that are more consistent across
 projects.
 
 One of the main themes discussed is the need to create some sort of style
@@ -26,7 +26,7 @@ more of a "soft" enforcement.
 Another big topic was the need for nomenclature to become more consistent. A
 few examples were "tenant" vs. "project", and "instance" vs. "server".
 
-I came away with a new way of thinking about how to examine the REST APIs
+I came away with a new way of thinking about how to examine the ReST APIs
 that are employed across OpenStack. One of the main things I did after the
 session was spend some time studying the Nova API, as it was brought up that
 Nova laid much of the groundwork for future APIs.
@@ -198,7 +198,7 @@ Quite simply, Trove is a system for managing and controlling databases. It
 uses OpenStack as a blackbox deployment platform allowing administrators to
 manage, scale, ensure high-availability, incorporate multi-tenancy, and
 efficiently distribute resources for their databases. Like other OpenStack
-projects it provides a command line interface and a REST API for manipulating
+projects it provides a command line interface and a ReST API for manipulating
 it's operations.
 
 Having done some database operations work I can only imagine how useful it

@@ -42,7 +42,7 @@ This one really got me going in terms of just how flexible Neutron and the
 larger networking environment can be. It was interesting to learn about the
 options for reconfiguring the L2 and L3 agents. 
 
-In general, like much of OpenStack, a REST API is used to communicate with
+In general, like much of OpenStack, a ReST API is used to communicate with
 the Neutron server. The server then uses AMQP messaging to talk with all L2
 and L3 agents.
 

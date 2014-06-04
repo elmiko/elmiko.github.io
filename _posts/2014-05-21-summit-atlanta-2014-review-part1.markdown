@@ -5,6 +5,8 @@ date:   2014-05-21
 categories: openstack
 ---
 
+*update 2014-06-04: added links to the talks*
+
 The Atlanta 2014 summit was my first time attending an OpenStack gathering and
 I absolutely loved it. The amount of learning and communication that occurred
 was fantastic. Although I was exhausted at the end of every day, it usually
@@ -90,6 +92,8 @@ which are controlled by Neutron. More information about Ryu can be found at
 information about the ofagent can be found at
 [https://github.com/osrg/ryu/wiki/OFAgent-Openstack-IceHouse-environment-HOWTO](https://github.com/osrg/ryu/wiki/OFAgent-Openstack-IceHouse-environment-HOWTO)
 
+[Watch the talk here](https://www.openstack.org/summit/openstack-summit-atlanta-2014/session-videos/presentation/an-overview-of-open-source-backends-for-neutron)
+
 High Availability in Neutron: Getting the L3 Agent Right
 ----
 *Sylvain Afchain and Emilien Macchi*
@@ -146,6 +150,8 @@ Sylvan](http://techs.enovance.com/6413/summit-openstack-neutron-point-of-view)
 and the second is a [blueprint](https://blueprints.launchpad.net/neutron/+spec/l3-high-availability)
 that was started to implement high availability behavior in Neutron.
 
+[Watch the talk here](https://www.openstack.org/summit/openstack-summit-atlanta-2014/session-videos/presentation/high-availability-in-neutron-getting-the-l3-agent-right)
+
 Troubleshooting Neutron Virtual Networks
 ----
 *Phil Hopkins*
@@ -187,6 +193,8 @@ add devices to the virtual network for the same purposes.
 
 All in all a great talk and perhaps material for another post with greater
 explanation of the tools and methods Phil described.
+
+[Watch the talk here](https://www.openstack.org/summit/openstack-summit-atlanta-2014/session-videos/presentation/troubleshooting-neutron-virtual-networks)
 
 End of day 1
 ----

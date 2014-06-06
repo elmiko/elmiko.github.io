@@ -5,7 +5,7 @@ date:   2014-06-06
 categories: docker keystone
 ---
 
-*Big shoutout to Rob Rati, he had some excellent advise and a
+*Big shoutout to Rob Rati, he had some excellent advice and a
 [great blog post](http://rrati.github.io/blog/2014/05/09/apache-hadoop-plus-docker-plus-fedora-issues-and-limitations/)
 that gave me inspiration for this simple example.*
 

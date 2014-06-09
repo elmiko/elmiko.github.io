@@ -27,6 +27,10 @@ Install Docker
 
     # yum install -y docker-io
 
+Start Docker
+
+    # systemctl start docker
+
 Get Fedora images
 
     # docker pull fedora

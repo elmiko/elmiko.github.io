@@ -12,7 +12,7 @@ can enforce rules and have a different view point
 
 able to infer state by observing, or probing state with introspection
 
-mapping logical to phusical
+mapping logical to physical
 
 can modify behavior
 - enforce policy ingress/egress

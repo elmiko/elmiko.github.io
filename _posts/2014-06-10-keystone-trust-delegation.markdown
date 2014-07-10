@@ -21,7 +21,7 @@ some flexibility when using the command line tools. I am also using the
 [httpie](http://httpie.org) tool for making the ReST calls.
 
 I have created a container for the `demo` user named `job1`, and set
-the environment variable `OS_PASSWORD=openstack`,
+the environment variables `OS_PASSWORD=openstack` and
 `OS_AUTH_URL=http://10.0.1.62:5000/v2.0`. For reference the IP address of my
 machine is currently `10.0.1.62`.
 
@@ -59,7 +59,9 @@ $ keystone tenant-list
 
 In this case I would like to delegate a trust that allows impersonation and
 gives the trustee the role of `Member`. This access should allow the trustee
-to read and write to the container while keeping the trustor's identity.
+to read and write the container while keeping the trustor's identity. I'm
+allowing impersonation so that if the trustee writes to the container the
+ownership will remain with the trustor.
 
 {% highlight json %}
 trust_create.json
@@ -185,7 +187,8 @@ we wish to consume.
 ####Consume the Trust
 
 This operation is the same as acquiring any other authentication token with
-the exception that the token will be scoped to the newly created trust.
+the exception that the token will be scoped to the newly created trust. I
+have cut out the `catalog` contents as they are quite long.
 
 {% highlight bash %}
 $ http http://10.0.1.62:5000/v3/auth/tokens X-Auth-Token:d2f4a38aa84f40a798f041d19d044d3d < trust_consume.json 
@@ -245,11 +248,11 @@ X-Subject-Token: f0a1133ee9be40e693fb682d45871d50
 
 ####Acquire a Trust Based Authentication Token
 
-After consuming the trust we can use the trust_consume.json again to acquire
-an authentication token based solely on the trustee's identity. We will get
-back a structure that is, more or less, the same as the result of the trust
-consumption. In this case though we are concerned with the value of
-X-Subject-Token as it contains our authentication.
+After consuming the trust we can use the `trust_consume.json` file again to
+acquire an authentication token based solely on the trustee's identity. We
+will get back a structure that is, more or less, the same as the result of the
+trust consumption. In this case though we are concerned with the value of
+X-Subject-Token as it contains our authentication token.
 
 {% highlight bash %}
 $ http http://10.0.1.62:5000/v3/auth/tokens X-Auth-Token:d2f4a38aa84f40a798f041d19d044d3d < trust_consume.json 
@@ -270,7 +273,8 @@ X-Subject-Token: 595714f8d9fc4a959ed47f1c9025820e
 ####Determine the Storage URL
 
 We need to use the storageURL as provided by Swift if we want to authenticate
-with the trust based token.
+with the trust based token. This is important to note as this is the only
+root URL we will be able to use in conjuction with token based authentication.
 
 {% highlight bash %}
 $ swift --os-username=demo --os-tenant-name=demo stat -v
@@ -291,10 +295,10 @@ X-Account-Storage-Policy-Policy-0-Object-Count: 4
 ####Confirm that it Works
 
 With our freshly minted trust based authentication token, we will now attempt
-to access the contents of the Swift. We are not actually accessing an
-object, but merely reading the contents of Swift to show us the available
-containers. To access a container or object, append them to the storageURL
-(i.e. `http://storageURL/container/object`).
+to access the contents of Swift scoped to the `demo` user. We are not actually
+accessing an object, but merely reading the contents of Swift to show us the
+available containers. To access a container or object, append them to the
+storageURL (i.e. `http://storageURL/container/object`).
 
 {% highlight bash %}
 $ http http://10.0.1.62:8080/v1/AUTH_24ea2aa9dc234982afa4b2ca23ac3d36 X-Auth-Token:595714f8d9fc4a959ed47f1c9025820e
@@ -355,12 +359,17 @@ X-Trans-Id: txa17b6b5ee45b47339f0f9-0053bf0779
 This is a very simple example but it shows how trusts can be used to share
 access to Swift resources between users. I like the idea of trusts because it
 allows a developer to provide limited access without having to get into the
-business of credential management. Although I am very curious to see what the
-Barbican project has to offer as it also gives a mechanism for sharing
-secrets. I am not sure if there is parity with trusts, and I don't think one
-overrides the other.
+business of credential management. There is much more depth to the trust
+mechanism that what is shown here, but as I have learned Keystone is deep
+well. 
 
 In my next installment I'll get into
 using the python client interfaces to perform the same operation.
 
-For more reading check out the [Official Trust API](https://github.com/openstack/identity-api/blob/master/v3/src/markdown/identity-api-v3-os-trust-ext.md).
+For more reading check out:
+
+[Official Trust API](https://github.com/openstack/identity-api/blob/master/v3/src/markdown/identity-api-v3-os-trust-ext.md).
+
+[Keystone Documentation](https://docs.openstack.org/developer/keystone)
+
+[Identity API v2.0](http://docs.openstack.org/api/openstack-identity-service/2.0/content/)

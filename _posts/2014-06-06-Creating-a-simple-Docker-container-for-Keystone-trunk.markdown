@@ -35,11 +35,11 @@ Get Fedora images
 
     # docker pull fedora
 
-Create a Dockerfile for Keystone
+Create a `Dockerfile` for Keystone
 
 {% gist elmiko/717e8ad3bc7099ef932f %}
 
-Build an image from the Dockerfile
+Build an image from it
 
     # docker build -t testing/keystone - < Dockerfile
 
@@ -114,6 +114,6 @@ And presto! a working Keystone instance in a container. At this point it is
 only configured as a basic server, to get further I will most likely need to
 attach to the container and setup some users.
 
-All in all a fairly painless process, getting the Dockfile correct took me the
-most time but it wasn't difficult to debug given the way docker outputs to
-stdout.
+All in all a fairly painless process, getting the `Dockerfile` correct took
+me the most time but it wasn't difficult to debug given the way docker
+outputs to stdout.

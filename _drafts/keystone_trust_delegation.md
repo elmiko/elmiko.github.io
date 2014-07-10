@@ -1,115 +1,166 @@
-setup
---
+---
+layout: post
+title: Delegating Keystone trusts through the ReST API
+---
 
-created 2 projects and 2 users; project1, project2, and user1, user2
-user1 has roles: Member, _member_, anotherrole, heat_stack_owner in project1
-(these roles copied from the demo user in demo project of devstack)
-user1 creates a container in project1 named user1_container
+Recently I have been investigating the Trusts feature of Keystone version 3.
+During this exploration I have walked through many permutations of acquiring
+and using the trust based authentication tokens. What follows is an example of
+using the ReST API to delegate a trust from one user to another, and then use
+that trust to generate an authentication token for the purposes of accessing
+a Swift container owned by the first user.
 
-also sourced the admin creds to make the commands easier, made all passwords
-the same which is why these commands work without explicitly setting password
+###Setup
 
+I am using a freshly updated [Devstack](http://devstack.org) on my
+[Fedora 20](http://fedoraproject.org) installation. I am using a very simple
+local.conf file that sets all the passwords to `openstack`. This allows me
+some flexibility when using the command line tools. I am also using the
+[httpie](http://httpie.org) tool for making the ReST calls.
 
-1. get the ids needed
+I have created a container for the `demo` user named `job1`, and set
+the environment variable `OS_PASSWORD=openstack`,
+`OS_AUTH_URL=http://10.0.1.62:5000/v2.0`. For reference the IP address of my
+machine is currently `10.0.1.62`.
 
-    $ keystone user-list
-    +----------------------------------+-------------------+---------+---------------------+
-    |                id                |        name       | enabled |        email        |
-    +----------------------------------+-------------------+---------+---------------------+
-    | a366106aea6344528852249076399365 |       user1       |   True  |                     |
-    | 73ac0e77166043418102414fc23c34ee |       user2       |   True  |                     |
+###The Process
 
-2. get the tenant id needed
+####Collect IDs for the Trustor and Trustee
 
-    $ keystone tenant-list
-    +----------------------------------+--------------------+---------+
-    |                id                |        name        | enabled |
-    +----------------------------------+--------------------+---------+
-    | baf6f15467714034b4f97fdecc550506 |      project1      |   True  |
+I start nice and simple by recording the IDs that will be needed for the
+trust delegation. In this case user `demo` will be the trustor and `alt_demo`
+the trustee.
 
-3. create a json file for the trust creation
+{% highlight bash %}
+$ keystone user-list
++----------------------------------+-------------------+---------+---------------------+
+|                id                |        name       | enabled |        email        |
++----------------------------------+-------------------+---------+---------------------+
+| cd7b3aa1f80f447f8f6b8c7d70cddc56 |      alt_demo     |   True  |                     |
+| f0964f8ed640479fa1b24c334f8d9d8c |        demo       |   True  |   demo@example.com  |
+{% endhighlight %}
 
-    trust_creation.json
-    {
-      "trust": {
-        "impersonation": false,
-        "project_id": "baf6f15467714034b4f97fdecc550506",
+####Collect Project ID
+
+Next we will need the ID of the project that `alt_demo` should have
+access to based on the trust.
+
+{% highlight bash %}
+$ keystone tenant-list
++----------------------------------+--------------------+---------+
+|                id                |        name        | enabled |
++----------------------------------+--------------------+---------+
+| 24ea2aa9dc234982afa4b2ca23ac3d36 |        demo        |   True  |
+{% endhighlight %}
+
+####Create a JSON File for the Trust Delegation
+
+In this case I would like to delegate a trust that allows impersonation and
+gives the trustee the role of `Member`. This access should allow the trustee
+to read and write to the container while keeping the trustor's identity.
+
+{% highlight json %}
+trust_create.json
+{
+  "trust": {
+    "impersonation": true,
+    "project_id": "24ea2aa9dc234982afa4b2ca23ac3d36",
+    "roles": [
+        {
+            "name": "Member"
+        }
+    ],
+      "trustee_user_id": "cd7b3aa1f80f447f8f6b8c7d70cddc56",
+      "trustor_user_id": "f0964f8ed640479fa1b24c334f8d9d8c"
+  }
+}
+{% endhighlight %}
+
+####Get a Token for the Trustor
+
+We need a token scoped to the project for the trustor to authenticate the
+delegation.
+
+{% highlight bash %}
+$ keystone --os-username=demo --os-tenant-name=demo token-get
++-----------+----------------------------------+
+|  Property |              Value               |
++-----------+----------------------------------+
+|  expires  |       2014-07-10T22:13:41Z       |
+|     id    | 1acb40d200a64874b1dde102dfe14882 |
+| tenant_id | 24ea2aa9dc234982afa4b2ca23ac3d36 |
+|  user_id  | f0964f8ed640479fa1b24c334f8d9d8c |
++-----------+----------------------------------+
+{% endhighlight %}
+
+####Create the Trust
+
+Using the JSON file we created earlier, we now create the trust. We will want
+note the `id` of the trust created, in this case
+`2d82fb8349d64c33babcd8f62b451aa7`.
+
+{% highlight bash %}
+$ http http://10.0.1.62:5000/v3/OS-TRUST/trusts X-Auth-Token:1acb40d200a64874b1dde102dfe14882 < trust_create.json 
+HTTP/1.1 201 Created
+Content-Length: 675
+Content-Type: application/json
+Date: Thu, 10 Jul 2014 21:14:37 GMT
+Vary: X-Auth-Token
+
+{
+    "trust": {
+        "expires_at": null, 
+        "id": "2d82fb8349d64c33babcd8f62b451aa7", 
+        "impersonation": true, 
+        "links": {
+            "self": "http://10.0.1.62:5000/v3/OS-TRUST/trusts/2d82fb8349d64c33babcd8f62b451aa7"
+        }, 
+        "project_id": "24ea2aa9dc234982afa4b2ca23ac3d36", 
+        "remaining_uses": null, 
         "roles": [
             {
+                "id": "40d1d753969b4aa99b2be2a8414da4b5", 
+                "links": {
+                    "self": "http://10.0.1.62:5000/v3/roles/40d1d753969b4aa99b2be2a8414da4b5"
+                }, 
                 "name": "Member"
             }
-        ],
-          "trustee_user_id": "73ac0e77166043418102414fc23c34ee",
-          "trustor_user_id": "a366106aea6344528852249076399365"
-      }
+        ], 
+        "roles_links": {
+            "next": null, 
+            "previous": null, 
+            "self": "http://10.0.1.62:5000/v3/OS-TRUST/trusts/2d82fb8349d64c33babcd8f62b451aa7/roles"
+        }, 
+        "trustee_user_id": "cd7b3aa1f80f447f8f6b8c7d70cddc56", 
+        "trustor_user_id": "f0964f8ed640479fa1b24c334f8d9d8c"
     }
+}
+{% endhighlight %}
 
-4. get a token for the trustor
+####Get a Token for Trustee
 
-    $ keystone --os-username=user1 --os-tenant-name=project1 token-get
-    +-----------+----------------------------------+
-    |  Property |              Value               |
-    +-----------+----------------------------------+
-    |  expires  |       2014-07-03T18:45:04Z       |
-    |     id    | 316f9a2732c94a50bcd72c3442c1c298 |
-    | tenant_id | baf6f15467714034b4f97fdecc550506 |
-    |  user_id  | a366106aea6344528852249076399365 |
-    +-----------+----------------------------------+
+Now we will need a token for the trustee to consume the trust. I have
+specifically created a token that is not scoped to a project to show that
+there is no connection between the trustee and the trusted project.
 
-5. create trust
+{% highlight bash %}
+$ keystone --os-username=alt_demo --os-tenant-name= token-get
++----------+----------------------------------+
+| Property |              Value               |
++----------+----------------------------------+
+| expires  |       2014-07-10T22:17:48Z       |
+|    id    | d2f4a38aa84f40a798f041d19d044d3d |
+| user_id  | cd7b3aa1f80f447f8f6b8c7d70cddc56 |
++----------+----------------------------------+
+{% endhighlight %}
 
-    $ http http://localhost:5000/v3/OS-TRUST/trusts X-Auth-Token:316f9a2732c94a50bcd72c3442c1c298 < trust_creation.json
-    HTTP/1.1 201 Created
-    Content-Length: 676
-    Content-Type: application/json
-    Date: Thu, 03 Jul 2014 17:47:28 GMT
-    Vary: X-Auth-Token
+####Create a JSON File for Trust Consumption
 
-    {
-        "trust": {
-            "expires_at": null, 
-                "id": "0cd44208d1eb44e0af367c1c3ecc3ae4", 
-                "impersonation": false, 
-                "links": {
-                    "self": "http://10.0.1.62:5000/v3/OS-TRUST/trusts/0cd44208d1eb44e0af367c1c3ecc3ae4"
-                }, 
-                "project_id": "baf6f15467714034b4f97fdecc550506", 
-                "remaining_uses": null, 
-                "roles": [
-                {
-                    "id": "aa7a57296f5d462da8580fd23d297356", 
-                    "links": {
-                        "self": "http://10.0.1.62:5000/v3/roles/aa7a57296f5d462da8580fd23d297356"
-                    }, 
-                    "name": "Member"
-                }
-            ], 
-                "roles_links": {
-                    "next": null, 
-                    "previous": null, 
-                    "self": "http://10.0.1.62:5000/v3/OS-TRUST/trusts/0cd44208d1eb44e0af367c1c3ecc3ae4/roles"
-                }, 
-                "trustee_user_id": "73ac0e77166043418102414fc23c34ee", 
-                "trustor_user_id": "a366106aea6344528852249076399365"
-        }
-    }
+A simple file containing the trustee token we just acquired and the trust ID
+we wish to consume.
 
-
-6. get a token for trustee
-*this token is purposely not scoped to a project*
-
-    $ keystone --os-username=user2 --os-tenant-name= token-get
-    +----------+----------------------------------+
-    | Property |              Value               |
-    +----------+----------------------------------+
-    | expires  |       2014-07-03T18:49:52Z       |
-    |    id    | 5a169bffe56b4af3af14e5f336a74d26 |
-    | user_id  | 73ac0e77166043418102414fc23c34ee |
-    +----------+----------------------------------+
-
-7. create a json file for trust consumption
-
-    trust_consumption.json
+{% highlight json %}
+    trust_consume.json
     {
       "auth": {
         "identity": {
@@ -117,174 +168,197 @@ the same which is why these commands work without explicitly setting password
             "token"
             ],
           "token": {
-            "id": "5a169bffe56b4af3af14e5f336a74d26"
+            "id": "d2f4a38aa84f40a798f041d19d044d3d"
           }
         },
         "scope": {
           "OS-TRUST:trust": {
-            "id": "0cd44208d1eb44e0af367c1c3ecc3ae4"
+            "id": "2d82fb8349d64c33babcd8f62b451aa7"
           }
         }
       }
     }
+{% endhighlight %}
 
-8. consume trust
+####Consume the Trust
 
-    $ http http://localhost:5000/v3/auth/tokens X-Auth-Token:5a169bffe56b4af3af14e5f336a74d26 < trust_consumption.json
-    HTTP/1.1 201 Created
-    Content-Length: 7406
-    Content-Type: application/json
-    Date: Thu, 03 Jul 2014 17:57:46 GMT
-    Vary: X-Auth-Token
-    X-Subject-Token: 1e81bd745cf947a4b0022a976b3bc77e
+This operation is the same as acquiring any other authentication token with
+the exception that the token will be scoped to the newly created trust.
 
-    {
-        "token": {
-            "OS-TRUST:trust": {
-                "id": "0cd44208d1eb44e0af367c1c3ecc3ae4", 
-                    "impersonation": false, 
-                    "trustee_user": {
-                        "id": "73ac0e77166043418102414fc23c34ee"
-                    }, 
-                    "trustor_user": {
-                        "id": "a366106aea6344528852249076399365"
-                    }
+{% highlight bash %}
+$ http http://10.0.1.62:5000/v3/auth/tokens X-Auth-Token:d2f4a38aa84f40a798f041d19d044d3d < trust_consume.json 
+HTTP/1.1 201 Created
+Content-Length: 6815
+Content-Type: application/json
+Date: Thu, 10 Jul 2014 21:20:32 GMT
+Vary: X-Auth-Token
+X-Subject-Token: f0a1133ee9be40e693fb682d45871d50
+
+{
+    "token": {
+        "OS-TRUST:trust": {
+            "id": "2d82fb8349d64c33babcd8f62b451aa7", 
+            "impersonation": true, 
+            "trustee_user": {
+                "id": "cd7b3aa1f80f447f8f6b8c7d70cddc56"
             }, 
-            "catalog": [
-               <CUTTING OUT CATALOG CONTENTS>
-            ],
-            "expires_at": "2014-07-03T18:49:52.000000Z", 
-            "extras": {}, 
-            "issued_at": "2014-07-03T17:57:46.108183Z", 
-            "methods": [
-                "token"
-                ], 
-            "project": {
-                "domain": {
-                    "id": "default", 
-                    "name": "Default"
-                }, 
-                "id": "baf6f15467714034b4f97fdecc550506", 
-                "name": "project1"
+            "trustor_user": {
+                "id": "f0964f8ed640479fa1b24c334f8d9d8c"
+            }
+        }, 
+        "catalog": [
+            ...
+        ], 
+        "expires_at": "2014-07-10T22:17:48.000000Z", 
+        "extras": {}, 
+        "issued_at": "2014-07-10T21:20:32.879083Z", 
+        "methods": [
+            "token"
+        ], 
+        "project": {
+            "domain": {
+                "id": "default", 
+                "name": "Default"
             }, 
-            "roles": [
+            "id": "24ea2aa9dc234982afa4b2ca23ac3d36", 
+            "name": "demo"
+        }, 
+        "roles": [
             {
-                "id": "aa7a57296f5d462da8580fd23d297356", 
+                "id": "40d1d753969b4aa99b2be2a8414da4b5", 
                 "name": "Member"
             }
-            ], 
-            "user": {
-                "domain": {
-                    "id": "default", 
-                    "name": "Default"
-                }, 
-                "id": "73ac0e77166043418102414fc23c34ee", 
-                "name": "user2"
-            }
-        }
-    }
-
-
-fill ni trust token acquire json
-
-    {
-        "auth": {
-            "identity": {
-                "methods": [
-                    "token"
-                    ],
-                "token": {
-                    "id": "5a169bffe56b4af3af14e5f336a74d26"
-                }
-            },
-            "scope": {
-                "OS-TRUST:trust": {
-                    "id": "0cd44208d1eb44e0af367c1c3ecc3ae4"
-                }
-            }
-        }
-    }
-
-acquire a trust based token
-
-    $ http $KEYSTONE_URL/v3/auth/tokens X-Auth-Token:TRUSTEE_TOKEN < trust_token_acquire.json
-    HTTP/1.1 201 Created
-    Content-Length: 7406
-    Content-Type: application/json
-    Date: Thu, 03 Jul 2014 18:16:34 GMT
-    Vary: X-Auth-Token
-    X-Subject-Token: 03d561ab59964899b7c2187d4ab7f199
-
-    {
-        "token": {
-            "OS-TRUST:trust": {
-                "id": "0cd44208d1eb44e0af367c1c3ecc3ae4", 
-                    "impersonation": false, 
-                    "trustee_user": {
-                        "id": "73ac0e77166043418102414fc23c34ee"
-                    }, 
-                    "trustor_user": {
-                        "id": "a366106aea6344528852249076399365"
-                    }
+        ], 
+        "user": {
+            "domain": {
+                "id": "default", 
+                "name": "Default"
             }, 
-            "catalog": [
-            ], 
-            "expires_at": "2014-07-03T18:49:52.000000Z", 
-            "extras": {}, 
-            "issued_at": "2014-07-03T18:16:34.907387Z", 
-            "methods": [
-                "token"
-                ], 
-            "project": {
-                "domain": {
-                    "id": "default", 
-                    "name": "Default"
-                }, 
-                "id": "baf6f15467714034b4f97fdecc550506", 
-                "name": "project1"
-            }, 
-            "roles": [
-            {
-                "id": "aa7a57296f5d462da8580fd23d297356", 
-                "name": "Member"
-            }
-            ], 
-            "user": {
-                "domain": {
-                    "id": "default", 
-                    "name": "Default"
-                }, 
-                "id": "73ac0e77166043418102414fc23c34ee", 
-                "name": "user2"
-            }
+            "id": "f0964f8ed640479fa1b24c334f8d9d8c", 
+            "name": "demo"
         }
     }
+}
+{% endhighlight %}
 
-The X-Subject-Token header contains the newly created token.
+####Acquire a Trust Based Authentication Token
 
-test that it works
+After consuming the trust we can use the trust_consume.json again to acquire
+an authentication token based solely on the trustee's identity. We will get
+back a structure that is, more or less, the same as the result of the trust
+consumption. In this case though we are concerned with the value of
+X-Subject-Token as it contains our authentication.
 
-    $ http $SWIFT_URL X-Auth-Token:TRUSTEE_TRUST_TOKEN
-    HTTP/1.1 200 OK
-    Accept-Ranges: bytes
-    Content-Length: 16
-    Content-Type: text/plain; charset=utf-8
-    Date: Thu, 03 Jul 2014 18:19:32 GMT
-    X-Account-Bytes-Used: 0
-    X-Account-Container-Count: 1
-    X-Account-Object-Count: 0
-    X-Account-Storage-Policy-Policy-0-Bytes-Used: 0
-    X-Account-Storage-Policy-Policy-0-Object-Count: 0
-    X-Timestamp: 1404399806.82144
-    X-Trans-Id: tx1a15b404d7804148aaecb-0053b59eb4
+{% highlight bash %}
+$ http http://10.0.1.62:5000/v3/auth/tokens X-Auth-Token:d2f4a38aa84f40a798f041d19d044d3d < trust_consume.json 
+HTTP/1.1 201 Created
+Content-Length: 6815
+Content-Type: application/json
+Date: Thu, 10 Jul 2014 21:29:23 GMT
+Vary: X-Auth-Token
+X-Subject-Token: 595714f8d9fc4a959ed47f1c9025820e
 
-    user1_container
+{
+    "token": {
+        "OS-TRUST:trust": {
+            "id": "2d82fb8349d64c33babcd8f62b451aa7", 
+                ...
+{% endhighlight %}
 
-revoke trust
+####Determine the Storage URL
 
-    $ http DELETE $KEYSTONE_URL/v3/OS-TRUST/trusts/TRUST_ID X-Auth-Token:TRUSTOR_TOKEN
-    HTTP/1.1 204 No Content
-    Content-Length: 0
-    Date: Thu, 03 Jul 2014 19:25:42 GMT
-    Vary: X-Auth-Token
+We need to use the storageURL as provided by Swift if we want to authenticate
+with the trust based token.
 
+{% highlight bash %}
+$ swift --os-username=demo --os-tenant-name=demo stat -v
+    StorageURL: http://10.0.1.62:8080/v1/AUTH_24ea2aa9dc234982afa4b2ca23ac3d36
+    Auth Token: 24c6e577963f4c79b8cd37403add7a23
+       Account: AUTH_24ea2aa9dc234982afa4b2ca23ac3d36
+    Containers: 1
+       Objects: 4
+         Bytes: 77
+X-Account-Storage-Policy-Policy-0-Bytes-Used: 77
+   X-Timestamp: 1404835370.90232
+X-Account-Storage-Policy-Policy-0-Object-Count: 4
+    X-Trans-Id: tx3a5e4366defb4d2c84f3d-0053bf04ff
+  Content-Type: text/plain; charset=utf-8
+ Accept-Ranges: bytes
+{% endhighlight %}
+
+####Confirm that it Works
+
+With our freshly minted trust based authentication token, we will now attempt
+to access the contents of the Swift. We are not actually accessing an
+object, but merely reading the contents of Swift to show us the available
+containers. To access a container or object, append them to the storageURL
+(i.e. `http://storageURL/container/object`).
+
+{% highlight bash %}
+$ http http://10.0.1.62:8080/v1/AUTH_24ea2aa9dc234982afa4b2ca23ac3d36 X-Auth-Token:595714f8d9fc4a959ed47f1c9025820e
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+Content-Length: 5
+Content-Type: text/plain; charset=utf-8
+Date: Thu, 10 Jul 2014 21:29:39 GMT
+X-Account-Bytes-Used: 77
+X-Account-Container-Count: 1
+X-Account-Object-Count: 4
+X-Account-Storage-Policy-Policy-0-Bytes-Used: 77
+X-Account-Storage-Policy-Policy-0-Object-Count: 4
+X-Timestamp: 1404835370.90232
+X-Trans-Id: txbadf1cf3089e4ca9aa0ff-0053bf05c3
+
+job1
+
+{% endhighlight %}
+
+####Revoke the Trust
+
+Now we will revoke the trust using the trustor's authentication token. This
+will invalidate the trust based token acquired by the trustee.
+
+{% highlight bash %}
+$ http DELETE http://10.0.1.62:5000/v3/OS-TRUST/trusts/2d82fb8349d64c33babcd8f62b451aa7 X-Auth-Token:1acb40d200a64874b1dde102dfe14882
+HTTP/1.1 204 No Content
+Content-Length: 0
+Date: Thu, 10 Jul 2014 21:36:00 GMT
+Vary: X-Auth-Token
+
+
+
+
+{% endhighlight %}
+
+####Confirm that Trust has been Revoked
+
+Finally we confirm that the trust has indeed been revoked by attempting to
+access the Swift storageURL using the trust based token generated earlier.
+
+{% highlight bash %}
+$ http http://10.0.1.62:8080/v1/AUTH_24ea2aa9dc234982afa4b2ca23ac3d36 X-Auth-Token:595714f8d9fc4a959ed47f1c9025820e
+HTTP/1.1 401 Unauthorized
+Content-Length: 131
+Content-Type: text/html; charset=UTF-8
+Date: Thu, 10 Jul 2014 21:36:57 GMT
+Www-Authenticate: Swift realm="AUTH_24ea2aa9dc234982afa4b2ca23ac3d36"
+X-Trans-Id: txa17b6b5ee45b47339f0f9-0053bf0779
+
+<html><h1>Unauthorized</h1><p>This server could not verify that you are authorized to access the document you requested.</p></html>
+
+{% endhighlight %}
+
+###Conclusion
+
+This is a very simple example but it shows how trusts can be used to share
+access to Swift resources between users. I like the idea of trusts because it
+allows a developer to provide limited access without having to get into the
+business of credential management. Although I am very curious to see what the
+Barbican project has to offer as it also gives a mechanism for sharing
+secrets. I am not sure if there is parity with trusts, and I don't think one
+overrides the other.
+
+In my next installment I'll get into
+using the python client interfaces to perform the same operation.
+
+For more reading check out the [Official Trust API](https://github.com/openstack/identity-api/blob/master/v3/src/markdown/identity-api-v3-os-trust-ext.md).

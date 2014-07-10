@@ -1,3 +1,4 @@
 name: elmiko's notes
 markdown: redcarpet
 pygments: true
+paginate: 3

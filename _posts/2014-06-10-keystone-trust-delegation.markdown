@@ -15,7 +15,7 @@ a Swift container owned by the first user.
 ###Setup
 
 I am using a freshly updated [Devstack](http://devstack.org) on my
-[Fedora 20](http://fedoraproject.org) installation. I am using a very simple
+[Fedora 20](http://fedoraproject.org) installation. I have a very simple
 local.conf file that sets all the passwords to `openstack`. This allows me
 some flexibility when using the command line tools. I am also using the
 [httpie](http://httpie.org) tool for making the ReST calls.

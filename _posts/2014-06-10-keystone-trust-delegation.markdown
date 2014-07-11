@@ -360,7 +360,7 @@ This is a very simple example but it shows how trusts can be used to share
 access to Swift resources between users. I like the idea of trusts because it
 allows a developer to provide limited access without having to get into the
 business of credential management. There is much more depth to the trust
-mechanism that what is shown here, but as I have learned Keystone is deep
+mechanism that what is shown here but as I have learned, Keystone is deep
 well. 
 
 In my next installment I'll get into

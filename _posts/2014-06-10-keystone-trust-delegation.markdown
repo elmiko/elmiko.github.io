@@ -357,7 +357,7 @@ X-Trans-Id: txa17b6b5ee45b47339f0f9-0053bf0779
 ###Conclusion
 
 This is a very simple example but it shows how trusts can be used to share
-a Swift resources between users in different projects. I like the idea of
+Swift resources between users in different projects. I like the idea of
 trusts because it allows a developer to provide limited access control without
 having to get into the business of credential management. There is much more
 depth to the trust mechanism than what is shown here but as I have learned,

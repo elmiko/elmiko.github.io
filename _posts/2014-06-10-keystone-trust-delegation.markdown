@@ -357,18 +357,18 @@ X-Trans-Id: txa17b6b5ee45b47339f0f9-0053bf0779
 ###Conclusion
 
 This is a very simple example but it shows how trusts can be used to share
-access to Swift resources between users. I like the idea of trusts because it
-allows a developer to provide limited access without having to get into the
-business of credential management. There is much more depth to the trust
-mechanism that what is shown here but as I have learned, Keystone is deep
-well. 
+a Swift resources between users in different projects. I like the idea of
+trusts because it allows a developer to provide limited access control without
+having to get into the business of credential management. There is much more
+depth to the trust mechanism than what is shown here but as I have learned,
+Keystone is a deep well. 
 
 In my next installment I'll get into
 using the python client interfaces to perform the same operation.
 
 For more reading check out:
 
-[Official Trust API](https://github.com/openstack/identity-api/blob/master/v3/src/markdown/identity-api-v3-os-trust-ext.md).
+[Official Trust API](https://github.com/openstack/identity-api/blob/master/v3/src/markdown/identity-api-v3-os-trust-ext.md)
 
 [Keystone Documentation](https://docs.openstack.org/developer/keystone)
 

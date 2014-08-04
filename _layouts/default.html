@@ -29,6 +29,9 @@
       <a class="navbar-brand" href="/">{{ site.name }}</a>
     </div>
     <div class="collapse navbar-collapse" id="bs-navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="/archive.html">Archive</a></li>
+      </ul>
     </div>
   </div>
 </nav>
@@ -52,7 +55,8 @@
       </div>
 
       <div>
-          {% for post in site.posts %}
+        <strong>Recent Posts</strong>
+          {% for post in site.posts limit:3 %}
           <ul class="list-unstyled">
             <li><a href="{{ post.url }}"><small>{{ post.title }}</small></a></li>
           </ul>

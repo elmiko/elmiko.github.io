@@ -9,5 +9,6 @@ pre {
 
 .footer {
     margin-top: 20px;
-    background-color: #e7e7e7;
+    background-color: #f8f8f8;
+    border-top: 1px solid #e7e7e7;
 }

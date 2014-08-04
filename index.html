@@ -3,10 +3,10 @@ layout: default
 title: elmiko's notes
 ---
 
-{% assign post = site.posts[0] %}
-<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-<p class="meta">{{ post.date | date_to_string }}</p>
-
+{% for ppost in paginator.posts %}
+<h2><a href="{{ ppost.url }}">{{ ppost.title }}</a></h2>
+<p class="meta">{{ ppost.date | date_to_string }}</p>
 <div class="post">
-{{ post.content }}
+{{ ppost.content }}
 </div>
+{% endfor %}

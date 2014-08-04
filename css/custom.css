@@ -12,3 +12,7 @@ pre {
     background-color: #f8f8f8;
     border-top: 1px solid #e7e7e7;
 }
+
+.navbar-nav > li > a.navbar-link {
+    color: #428bca;
+}

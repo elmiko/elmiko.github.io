@@ -137,7 +137,7 @@ An interesting feature that will come for Keystone is
 the trusts that could be delegated.
 
 All in all using trusts like this has been a good experience and shows a great
-deal of opportunity sharing all sorts of resources. Although this example
+deal of opportunity for sharing all sorts of resources. Although this example
 uses Swift, by delegating Heat privileges a trustee could be allowed to spawn
 instances. I imagine with the proper tweaking this could be carried to any
 service.

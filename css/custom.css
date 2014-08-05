@@ -1,6 +1,11 @@
-.post p {
+div .post p {
     font-size: 16px;
     line-height: 1.5;
+    margin-bottom: 1.5em;
+}
+
+div .post .highlight {
+    margin-bottom: 3em;
 }
 
 pre {
@@ -16,3 +21,5 @@ pre {
 .navbar-nav > li > a.navbar-link {
     color: #428bca;
 }
+
+

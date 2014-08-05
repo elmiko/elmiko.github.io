@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Accessing a Swift object using Keystone trust"
+title:  "Accessing a Swift object using a Keystone trust in Python"
 date:   2014-08-05
 categories:
 ---

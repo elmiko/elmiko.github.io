@@ -118,11 +118,12 @@ core concepts are the same.
 
 Getting the role names correct is another area that I am still learning more
 about. There is much functionality that is controlled based on the client
-objects credentials. I would like to find an easy way to query the client's
+object's credentials. I would like to find an easy way to query the client's
 role names and then use those names for a delegation. This proved challenging
 for me as there are some roles which cannot be delegated(i.e. Service).
-Luckily the roles are well defined in DevStack, I'm curious to learn more
-about the recommended role names for administrators.
+Luckily the roles are well defined in DevStack so I was able to pick one that
+I knew was valid. I'm curious to learn more about the recommended role names
+for administrators.
 
 I'm also interested to learn more about the Barbican project as I understand
 it is desgined for helping with shared secrets. I wonder if there is potential

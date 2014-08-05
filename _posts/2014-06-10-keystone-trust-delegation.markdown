@@ -2,7 +2,7 @@
 layout: post
 title: "Delegating Keystone trusts through the ReST API"
 date:   2014-06-10
-categories: openstack keystone
+categories:
 ---
 
 Recently I have been investigating the Trusts feature of Keystone version 3.

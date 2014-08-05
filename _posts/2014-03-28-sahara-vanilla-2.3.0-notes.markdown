@@ -2,7 +2,7 @@
 layout: post
 title:  "Creating Sahara clusters for vanilla 2.3.0 plugin"
 date:   2014-03-28
-categories: openstack sahara
+categories:
 ---
 
 Building some stuff from the ground up using the ReST API and httpie with

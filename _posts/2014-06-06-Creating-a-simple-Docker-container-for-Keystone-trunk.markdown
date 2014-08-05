@@ -2,7 +2,7 @@
 layout: post
 title:  "Creating a simple Docker container for Keystone trunk"
 date:   2014-06-06
-categories: docker keystone
+categories:
 ---
 
 *Big shoutout to Rob Rati, he had some excellent advice and a

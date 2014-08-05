@@ -2,7 +2,7 @@
 layout: post
 title:  "Setting up an environment for OpenStack/Sahara devel on RHEL6.5"
 date:   2014-03-26
-categories: openstack sahara rhel
+categories:
 ---
 
 These are the steps I followed to install the RDO Icehouse release and the

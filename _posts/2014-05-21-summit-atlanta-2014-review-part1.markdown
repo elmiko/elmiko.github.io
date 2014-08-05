@@ -2,7 +2,7 @@
 layout: post
 title:  "OpenStack Summit Atlanta 2014 Review (part 1)"
 date:   2014-05-21
-categories: openstack
+categories:
 ---
 
 *update 2014-06-04: added links to the talks*

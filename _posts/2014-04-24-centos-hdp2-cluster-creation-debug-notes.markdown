@@ -2,7 +2,7 @@
 layout: post
 title:  "Debugging notes from building CentOS Hadoop2 images"
 date:   2014-04-24
-categories: openstack sahara
+categories:
 ---
 
 This documents the process I have followed to create a Sahara cluster using

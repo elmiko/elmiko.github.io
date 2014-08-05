@@ -104,3 +104,5 @@ linuxbridge has feature parity with ovs
 linuxbridge simpler?
 
 labs.hol.vmware.com (search for OpenStack or HOL-SDC-1320)
+
+https://www.openstack.org/summit/openstack-summit-atlanta-2014/session-videos/presentation/recap-nova-network-or-neutron-for-openstack-networking

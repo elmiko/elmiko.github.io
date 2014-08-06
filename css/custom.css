@@ -12,6 +12,12 @@ pre {
     margin-bottom: 20px;
 }
 
+@font-face {
+    font-family: 'Molle';
+    src: url("/fonts/Molle-Regular.ttf");
+    font-weight: 400;
+}
+
 .font-molle {
     font-family: 'Molle', cursive, 'Arial';
     font-weight: 400;

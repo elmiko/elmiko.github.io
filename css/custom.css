@@ -12,6 +12,10 @@ pre {
     margin-bottom: 20px;
 }
 
+.font-molle {
+    font-family: 'Molle', cursive;
+}
+
 .footer {
     margin-top: 20px;
     background-color: #f8f8f8;

@@ -17,7 +17,9 @@ Setup
 I started by setting up a stock [DevStack](http://devstack.org/) on my 
 [Fedora 20](http://fedoraproject.org/) machine, logging in as the `demo`
 user, creating a container named `container1`, and uploading a [file][4] to
-an object named `README`. The following snippet was my final result:
+an object named `README`. After more than a few hours messing with the 
+openstack cli tools and the Python repl, I ended up with the following 
+snippet:
 
 {% gist elmiko/91242b01c322afb028ee %}
 

@@ -80,7 +80,7 @@
 
       <div>
         <strong>Recent Posts</strong>
-          {% for post in site.posts limit:3 %}
+          {% for post in site.posts offset:1 limit:3 %}
           <ul class="list-unstyled">
             <li><a href="{{ post.url }}"><small>{{ post.title }}</small></a></li>
           </ul>

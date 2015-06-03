@@ -5,7 +5,7 @@ date:   2014-10-24
 categories:
 ---
 
-Promted by user hogepodge in an IRC discussion I created a video demonstrating
+Prompted by user hogepodge in an IRC discussion I created a video demonstrating
 how to run a basic job in Sahara through Horizon. The video shows the
 execution of the [example PIG job][1] from the Sahara source base. It does
 not go into the configuration of the stack necessary for this, but does show

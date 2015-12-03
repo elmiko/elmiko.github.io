@@ -18,7 +18,7 @@ thanks to all those who planned, participated, and helped to make this a
 tremendous event. You really make these summits a joy to attend and I get a
 wealth of experience and comarderie out of them. Thank you!
 
-<a href="http://imgur.com/2Wfx1Vx">
+<a href="http://i.imgur.com/2Wfx1Vx">
 <img src="http://i.imgur.com/2Wfx1Vxl.jpg" title="Marketplace entrance" />
 </a>
 
@@ -80,12 +80,14 @@ good people to hang out with, thanks guys!
 Another great summit, I hope to attend again and look forward to more
 interesting development in the world of OpenStack.
 
-[1]: https://www.openstack.org/summit/tokyo-2015/videos/presentation/skts-journey-toward-platform-company-with-5g-network-and-openstack
+References
 
-[2]: https://www.openstack.org/summit/tokyo-2015/videos/presentation/data-processing-is-made-of-people-a-case-study-in-role-empathic-api-design-in-sahara
+1. [https://www.openstack.org/summit/tokyo-2015/videos/presentation/skts-journey-toward-platform-company-with-5g-network-and-openstack](https://www.openstack.org/summit/tokyo-2015/videos/presentation/skts-journey-toward-platform-company-with-5g-network-and-openstack)
 
-[3]: https://www.openstack.org/summit/tokyo-2015/videos/presentation/life-without-devstack-upstream-development-with-osad
+2. [https://www.openstack.org/summit/tokyo-2015/videos/presentation/data-processing-is-made-of-people-a-case-study-in-role-empathic-api-design-in-sahara](https://www.openstack.org/summit/tokyo-2015/videos/presentation/data-processing-is-made-of-people-a-case-study-in-role-empathic-api-design-in-sahara)
 
-[4]: https://www.openstack.org/summit/tokyo-2015/videos/presentation/this-is-sparkhara-openstack-log-processing-in-real-time-using-spark-on-sahara
+3. [https://www.openstack.org/summit/tokyo-2015/videos/presentation/life-without-devstack-upstream-development-with-osad](https://www.openstack.org/summit/tokyo-2015/videos/presentation/life-without-devstack-upstream-development-with-osad)
 
-[5]: https://www.openstack.org/summit/tokyo-2015/videos/presentation/sahara-storm-real-time-data-analytics-in-openstack
+4. [https://www.openstack.org/summit/tokyo-2015/videos/presentation/this-is-sparkhara-openstack-log-processing-in-real-time-using-spark-on-sahara](https://www.openstack.org/summit/tokyo-2015/videos/presentation/this-is-sparkhara-openstack-log-processing-in-real-time-using-spark-on-sahara)
+
+5. [https://www.openstack.org/summit/tokyo-2015/videos/presentation/sahara-storm-real-time-data-analytics-in-openstack](https://www.openstack.org/summit/tokyo-2015/videos/presentation/sahara-storm-real-time-data-analytics-in-openstack)

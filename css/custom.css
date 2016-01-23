@@ -8,6 +8,12 @@ div .post .highlight {
     margin-bottom: 3em;
 }
 
+img.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 pre {
     margin-bottom: 20px;
 }
@@ -16,6 +22,11 @@ pre {
     font-family: 'Molle';
     src: url("/fonts/Molle-Regular.ttf");
     font-weight: 400;
+}
+
+.copyright {
+    color: gray;
+    font-size: .75em;
 }
 
 .font-molle {

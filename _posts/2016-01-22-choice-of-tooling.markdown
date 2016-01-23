@@ -89,7 +89,7 @@ to quickly customize my shell, and tooling, makes these journeys much
 more enjoyable.
 
 <div class="alert alert-danger" role="alert">
-Warning! If you use public version control systems, always ensure that
+If you use public version control systems, always ensure that
 you have not left sensitive information in your configurations.
 </div>
 
@@ -97,7 +97,7 @@ Now, I will add a small caveat to my specific case. My Vim
 configurations are quite simple currently. I don't have much more than
 NERDTree and a handful of color schemes and language syntax
 highlighters. So, if you run something like [Eclim](http://eclim.org/)
-, this may not as easy. If you do use something as complex as Eclim,
+, this may not be as easy. If you do use something as complex as Eclim,
 and this technique works well, please let me know!.
 
 Have fun, and happy hacking =)

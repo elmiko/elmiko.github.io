@@ -28,7 +28,7 @@ business of storing the associated service credentials. By integrating with
 the Barbican project, we can rest easy knowing that we are leveraging the
 work of many excellent cryptography professionals.
 
-<img class="center" src="http://i.imgur.com/jxmKHrXm.png">
+<img class="center" src="http://i.imgur.com/SKMsxgxm.png">
 
 Barbican, as noted earlier, is the key manager service for OpenStack. This
 means that it can handle sensitive information(such as keys or passwords) and

@@ -2,7 +2,7 @@ name: elmiko's notes
 description: Notes from the front lines of development
 url: http://elmiko.github.io
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 paginate: 1
 safe: true
 lsi: false

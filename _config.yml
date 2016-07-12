@@ -1,6 +1,8 @@
 name: elmiko's notes
 description: Notes from the front lines of development
 url: http://elmiko.github.io
-markdown: redcarpet
-pygments: true
+markdown: kramdown
+highlighter: pygments
 paginate: 1
+safe: true
+lsi: false

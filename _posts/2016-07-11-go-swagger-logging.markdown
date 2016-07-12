@@ -71,7 +71,7 @@ Let's break this down quickly. The `http.Handler` interface defines a
 allow us to easily convert a function declaration into an object of type
 `http.Handler`. The function we define here will first print a line, through
 the standard logging package, that will display the HTTP request method and
-URL. After printing the log, it well then call the `ServerHTTP` method for
+URL. After printing the log, it well then call the `ServeHTTP` method for
 the `next http.Handler` that was passed during creation of the decorator. In
 this manner, we are returning a function that will get called as the
 `http.Handler` in place of the original, and then it will call the original

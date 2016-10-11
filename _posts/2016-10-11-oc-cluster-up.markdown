@@ -21,8 +21,8 @@ Before we get started, I need to mention one thing. This is **NOT**
 recommended for anything approaching a production environment. This is purely
 for development, testing, and other isolated types of usages. Furthermore, I
 recommend running this type of setup in a virtual machine, or on a piece of
-hardware that aren't using for anything else. My reasoning for this is that
-the cluster command will install a bunch of things to your local docker
+hardware that you aren't using for anything else. My reasoning for this is
+that the cluster command will install a bunch of things to your local docker
 registry and you may wish to avoid all that spam on a non-development machine.
 You have been warned.
 
@@ -109,7 +109,6 @@ currently running docker processes.
 ```
 $ docker images
 REPOSITORY                                          TAG                 IMAGE ID            CREATED             SIZE
-docker.io/radanalyticsio/oshinko-rest               latest              9aa935891f57        12 days ago         1.023 GB
 docker.io/openshift/origin-sti-builder              v1.4.0-alpha.0      70676b107f39        3 weeks ago         537 MB
 docker.io/openshift/origin-deployer                 v1.4.0-alpha.0      a5f428ddd52f        3 weeks ago         537 MB
 docker.io/openshift/origin-docker-registry          v1.4.0-alpha.0      503c75e81213        3 weeks ago         373.7 MB

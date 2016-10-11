@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "`oc cluster up`: my new OpenShift bff"
+title:  "`oc cluster up` is my new OpenShift bff"
 date:   2016-10-11
 categories:
 ---

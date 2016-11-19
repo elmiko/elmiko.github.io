@@ -109,6 +109,18 @@ doing internally.
 6. create a template for Oshinko pyspark build deployers
 7. instantiate a new instance of the Oshinko pod from the template in step 5
 
+<div class="alert alert-danger" role="alert">
+<span class="glyphicon glyphicon-exclamation-sign pull-left"
+      aria-hidden="true"
+      style="font-size:32pt; padding:.5em;"></span>
+A word of caution about exposing a public route to the
+Oshinko webui. This version of the webui is an alpha testing and development
+platform for the rest server. As such, exposing the webui to public traffic
+can allow unauthorized users to create Spark clusters in the project that
+Oshinko is deployed within. Please use extreme caution when exposing the
+webui in a public environment.
+</div>
+
 At this point, the Oshinko rest server and webui should be installed in our
 project, let's take a look at the console to see what's there.
 

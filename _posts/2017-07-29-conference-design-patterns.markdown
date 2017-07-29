@@ -28,7 +28,7 @@ I can never see all the talks I want to and often make tough last minute
 choices about what to see.
 
 That's why I find it to be especially helpful when a conference releases
-recordings of the talks on the same of next day. I'm noticing more and
+recordings of the talks on the same or next day. I'm noticing more and
 more of the larger conferences doing this, and I completely applaud it. Often
 times there is a lot of downtime when traveling spent in hotels or around the
 conference lounges and it's great to be able to catch up on things you might
@@ -61,7 +61,7 @@ hit you during the last session.
 I think it's great that more and more conferences are putting their videos on
 platforms that are free and easy to access (Youtube, Vimeo, etc). I totally
 dig it when a conference makes the recording available for download as well.
-It seems more and more the norm that conferences are following this trend. But
+It seems more frequently the norm that conferences are following this trend. But
 for the few that are still hosting recordings on custom sites or behind
 login barriers I can only ask that you please reconsider, **set the recordings
 free!** =)

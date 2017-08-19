@@ -76,7 +76,7 @@ to landing pages at Imgur. I didn't really want this, I wanted to allow people t
 click through to full size images without any extra content.
 
 This really frustrated me, so I decided to build a little JavaScript function
-into my page that would allow me to make fix this usability error. So I wrote
+into my page that would allow me to fix this usability error. So I wrote
 the following function block in a separate file:
 
 {% gist 5b837332078a67e18bfded77f2e571e6 %}
@@ -87,7 +87,7 @@ just fine in this static page.
 
 So what does it do? Well, quite simply it returns a function that will be used
 for an `img` element's `onclick` handler. This handler function will change
-the state that `img` element's `src` parameter to toggle between two images. In
+the state of that `img` element's `src` parameter to toggle between two images. In
 this manner, I can still use Imgur to host my images but allow a quick toggle
 to occur in-line. Try it now, click on the images of the books or magazine
 earlier in this post.

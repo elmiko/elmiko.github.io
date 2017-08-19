@@ -28,8 +28,8 @@ I think back fondly, but also with some trepidation about the early days of the
 culture wars over the moniker "hacker". For me, there is a clear memory of this
 label being something much more grand than the expectations we came to accept
 after movies like [WarGames](https://en.wikipedia.org/wiki/WarGames) and
-[Sneakers](https://en.wikipedia.org/wiki/Sneakers_(1992_film)). That people
-declared as "hackers" by the authorities were somehow capable of superhuman
+[Sneakers](https://en.wikipedia.org/wiki/Sneakers_(1992_film)). Those expectations,
+that people declared as "hackers" by the authorities were somehow capable of superhuman
 techno-magic that could empty all the banks in the world or start some sort of
 nuclear holocaust.
 

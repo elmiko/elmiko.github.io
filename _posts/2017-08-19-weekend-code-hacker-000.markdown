@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Weekend Code Hacker 000: Beginning a new series"
-date: 2017-08-12
+date: 2017-08-19
 categories:
 ---
 

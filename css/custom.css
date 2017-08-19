@@ -18,6 +18,10 @@ pre {
     margin-bottom: 20px;
 }
 
+pre.highlight {
+  background-color: #ebebeb;
+}
+
 @font-face {
     font-family: 'Molle';
     src: url("/fonts/Molle-Regular.ttf");

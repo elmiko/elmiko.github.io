@@ -5,6 +5,9 @@ title: elmiko's notes
 
 {% for ppost in paginator.posts %}
 <h2><a href="{{ ppost.url }}">{{ ppost.title }}</a></h2>
+{% if ppost.subtitle %}
+<h4>{{ ppost.subtitle }}</h4>
+{% endif %}
 <p class="meta">{{ ppost.date | date_to_string }}</p>
 <div class="post">
 {{ ppost.content }}

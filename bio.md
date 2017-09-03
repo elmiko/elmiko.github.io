@@ -4,8 +4,8 @@ title: elmiko's biography
 ---
 
 <div class="post">
-<img class="pull-right" src="/img/headshot_400x400.png">
-<h1>Michael McCune</h1>
+<img class="img-responsive center-block" src="/img/headshot_400x400.png">
+<h1>About the author</h1>
 
 <p>
 Michael McCune is a software developer in Red Hat's emerging technology

@@ -289,7 +289,7 @@ With all this in place, I can now make a curl request to my application and
 confirm an approximation of Pi:
 
 ```
-$ curl http://`oc get routes/sparkpi --template='{{.spec.host}}'`/sparkpi
+$ curl http://`oc get routes/sparkpi --template='{% raw %}{{.spec.host}}{% endraw %}'`/sparkpi
 Pi is roughly 3.14388
 ```
 

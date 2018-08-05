@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Attaching Jupyter notebooks to Apache Spark cluster with radanalytics.io"
+title: "Attaching Jupyter notebooks to Apache Spark clusters with radanalytics.io"
 date: 2018-08-05
 categories:
 ---

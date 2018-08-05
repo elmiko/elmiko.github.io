@@ -188,7 +188,7 @@ template akin to the language source-to-image templates could be wrangled
 to help enable this. That template plus a new launch script could bring a
 similar level of functionality to Jupyter notebooks.
 
-Additionally, I think we can create a default notebook that would inject the
+Additionally, I think we can create a default notebook that would inject
 the Spark cluster name and associated configurations as a sample notebook
 inside the running pod. This would give users a nice starting point for their
 experiments.

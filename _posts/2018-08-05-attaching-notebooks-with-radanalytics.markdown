@@ -94,7 +94,7 @@ default cluster image.
 
 I create a file, which I just call `nbconf.yaml`, that contains the following:
 
-```yaml
+```
 kind: ConfigMap
 apiVersion: v1
 metadata:

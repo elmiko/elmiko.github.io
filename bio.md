@@ -10,7 +10,7 @@ title: elmiko's biography
 <p>
 Michael McCune is a software developer in Red Hat's emerging technology
 group. He is an active contributor to several radanalytics.io projects, as
-well as being a core reviewer for the OpenStack API Working Group. Since
+well as being a core reviewer for the OpenStack API Special Interest Group. Since
 joining Red Hat four years ago, he has been developing and deploying
 applications for cloud platforms. Prior to his career at Red Hat,  Michael
 developed Linux based software for embedded global positioning systems.

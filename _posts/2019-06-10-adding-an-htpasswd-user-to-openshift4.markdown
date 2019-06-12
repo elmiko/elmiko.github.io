@@ -18,7 +18,7 @@ adding new users/credentials is easier than ever.
 
 1. create an `htpasswd` file for the cluster. this should probably contain all
    the users you want to be in there, so make sure it has everything.
-   _if updating an old file, drop the `-b`_
+   _if updating an old file, drop the `-c`_
    ```
    htpasswd -c -B -b ./openshift.htpasswd user1 secret
    ```

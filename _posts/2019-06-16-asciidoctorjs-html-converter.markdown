@@ -31,6 +31,7 @@ const nunjucks = require("nunjucks");
 
 nunjucks.configure({autoescape: false});
 
+{% raw %}
 const template = `<!DOCTYPE html>
 <html lang="en">
   <head>
@@ -42,6 +43,7 @@ const template = `<!DOCTYPE html>
     {{ context.getContent() }}
   </body>
 </html>`;
+{% endraw %}
 
 class TemplateConverter {
   constructor () {

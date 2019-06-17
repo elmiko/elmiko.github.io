@@ -61,9 +61,7 @@ class TemplateConverter {
 }
 
 asciidoctor.ConverterFactory.register(new TemplateConverter(), ["html5"]);
-const filename = "/path/to/some/document.adoc";
-const destination = "/path/to/output/";
-var adoc = asciidoctor.convertFile(filename, {to_dir: destination});
+var adoc = asciidoctor.convertFile("./example1.adoc");
 ```
 
 With this as the starting point I was quickly able to add a little more

@@ -11,7 +11,7 @@ hunting on a community site I work on (https://radanalytics.io). It's a really
 interesting tool, but it might make you sad when you first check your _baby_
 out.
 
-![d+ rating](/img/radio-observatory-1.png)
+<img src="/img/radio-observatory-1.png" class="img-responsive center-block" alt="d+ rating">
 
 _ouch_
 
@@ -66,7 +66,7 @@ advice given by the Observatory on
 [Mozilla's page about web security](https://infosec.mozilla.org/guidelines/web_security).
 The big win though was the final result:
 
-![a+ rating](/img/radio-observatory-2.png)
+<img src="/img/radio-observatory-2.png" class="img-responsive center-block" alt="a+ rating">
 
 _huzzah!_
 

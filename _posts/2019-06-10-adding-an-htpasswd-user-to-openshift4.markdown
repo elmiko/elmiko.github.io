@@ -27,7 +27,7 @@ adding new users/credentials is easier than ever.
    provider to read the individual credentials, i am doing this as a dry run
    to create a file for the manifest because the secret should exist already.
    ```
-   oc create secret generic htpass-secret \
+   oc create secret generic htpasswd-secret \
        --from-file=htpasswd=./openshift.htpasswd \
        --namespace openshift-config \
        --dry-run \

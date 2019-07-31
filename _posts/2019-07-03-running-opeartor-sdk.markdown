@@ -38,3 +38,10 @@ This is what finally worked for me in Fedora 30 after:
 
 After all this I was able to run `operator-sdk up local` and my operator was
 running fine. Now on to the debugging ;)
+
+**Update 31 July 2019**
+
+One more thing to keep in mind when you are running local operators. The
+`watches.yaml` file will be set to look for things in `/opt/ansible/`, so I
+needed to make a symlink from `/opt/ansible` to the root of my project
+directory. You could also just change the watches file.

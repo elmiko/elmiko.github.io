@@ -187,7 +187,7 @@ users. But, I'd like to highlight a few of these options.
 
 `-d` allows you to automatically deploy OpenShift on your host using the
 `oc cluster up` command,
-[see my previous post for more info](https://elmiko.github.io/2016/10/11/oc-cluster-up.html).
+[see my previous post for more info](/2016/10/11/oc-cluster-up.html).
 This greatly simplifies the development process if you either don't have
 access to a running OpenShift cluster, or if you would like to try it out in
 a developer environment.

@@ -145,7 +145,7 @@ instances. I imagine with the proper tweaking this could be carried to any
 service.
 
 
-[1]: http://elmiko.github.io/openstack/keystone/2014/06/10/keystone-trust-delegation.html
+[1]: /2014/06/10/keystone-trust-delegation.html
 [2]: http://docs.openstack.org/developer/python-keystoneclient/
 [3]: http://docs.openstack.org/developer/python-swiftclient
 [4]: https://raw.githubusercontent.com/openstack/sahara-extra/master/edp-examples/pig-job/README.rst

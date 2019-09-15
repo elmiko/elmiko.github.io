@@ -9,7 +9,7 @@ categories:
 
 Welcome back! This is the continuation of my review of the Atlanta 2014
 OpenStack Summit. If you missed it, part 1 is available
-[here](http://elmiko.github.io/openstack/2014/05/21/summit-atlanta-2014-review-part1.html).
+[here](/2014/05/21/summit-atlanta-2014-review-part1.html).
 
 
 Consistency across Openstack ReST APIs
@@ -231,7 +231,7 @@ Final Thoughts
 ----
 
 As I mentioned in
-[part 1](http://elmiko.github.io/openstack/2014/05/21/summit-atlanta-2014-review-part1.html) I had a thoroughly enjoyable time at the Summit. I look forward to attending
+[part 1](/2014/05/21/summit-atlanta-2014-review-part1.html) I had a thoroughly enjoyable time at the Summit. I look forward to attending
 again in the futre and hopefully I'll have a better mind towards organizing
 the talks I attend and get more involved in the design sessions.
 

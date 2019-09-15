@@ -1,4 +1,4 @@
-elmiko.github.io
+notes.elmiko.dev
 ================
 
 A collection of notes that I am keeping on various topics.

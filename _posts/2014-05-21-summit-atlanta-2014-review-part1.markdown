@@ -212,4 +212,4 @@ me an email so that I can get a correction up as soon as possible.
 
 thanks!
 
-[Part 2](http://elmiko.github.io/openstack/2014/06/03/summit-atlanta-2014-review-part2.html)
+[Part 2](/2014/06/03/summit-atlanta-2014-review-part2.html)

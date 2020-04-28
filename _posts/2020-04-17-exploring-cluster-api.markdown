@@ -165,7 +165,7 @@ I have used the template file that is used for testing and is found here:
 ```
 mkdir -p $HOME/.cluster-api/overrides/infrastructure-docker/v0.3.0
 cd $HOME/.cluster-api/overrides/infrastructure-docker/v0.3.0
-wget https://raw.githubusercontent.com/kubernetes-sigs/cluster-api/master/cmd/clusterctl/test/testdata/docker/v0.3.0/cluster-template.yaml
+wget https://github.com/kubernetes-sigs/cluster-api/blob/v0.3.3/cmd/clusterctl/test/testdata/docker/v0.3.0/cluster-template.yaml
 ```
 
 (I realize your system might not have `wget`, but I hope you get the idea of what I'm doing)

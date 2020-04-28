@@ -159,7 +159,7 @@ and then the command:
 Another thing I need to do is create a template for the clusters that will be
 created. This file needs to be placed in `$HOME/.cluster-api/overrides/infrastructure-docker/v0.3.0/`.
 I have used the template file that is used for testing and is found here:
-[cluster-template.yaml](https://github.com/kubernetes-sigs/cluster-api/blob/master/cmd/clusterctl/test/testdata/docker/v0.3.0/cluster-template.yaml).
+[cluster-template.yaml](https://github.com/kubernetes-sigs/cluster-api/blob/v0.3.3/cmd/clusterctl/test/testdata/docker/v0.3.0/cluster-template.yaml).
 
 
 ```
@@ -221,7 +221,7 @@ export DOCKER_SERVICE_DOMAIN=cluster.local
 Create the worker cluster manifest. This defines the cluster that will be
 created by the Cluster API management cluster.
 ```
-clusterctl config cluster work-cluster --kubernetes-version 1.17.2 > work-cluster.yaml
+clusterctl config cluster work-cluster --kubernetes-version v1.17.2 > work-cluster.yaml
 ```
 
 Launch the work cluster

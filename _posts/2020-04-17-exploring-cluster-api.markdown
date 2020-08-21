@@ -6,6 +6,9 @@ date: 2020-04-17
 categories:
 ---
 
+_**Update: Please note that these instructions assume the following versions:
+Kind v0.6.0, Kubernetes v1.17.2, and Cluster API v0.3.5**_
+
 The [Cluster API project](https://github.com/kubernetes-sigs/cluster-api) provides
 declarative Kubernetes-style workflows for the creation and management of
 entire Kubernetes clusters. I have recently starting to work more closely with

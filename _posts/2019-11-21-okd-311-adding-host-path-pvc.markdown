@@ -141,4 +141,10 @@ pv5    10Gi       RWO            Retain           Available                     
 
 Excellent! I can know create objects that require PersistentVolumeClaims.
 
+*update*
+Something to keep in mind about these insttructions is that the reclaim policy
+of `Retain` will prevent these volume claims from being released when they are
+not being used. If this behavior is causing you problems, try using the `Recycle`
+policy instead.
+
 I hope these instructions are helpful, and as always happy hacking =)

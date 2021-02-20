@@ -162,6 +162,6 @@ JSON).
 I hope you enjoyed this story, if you have any questions please reach out,
 and if you would like to check out the code just look here:
 
-* #### [Kafka OpenShift React Sparkline code](https://github.com/bones-brigade/flask-openshift-react-sparkline)
+* #### [Kafka OpenShift React Sparkline code](https://gitlab.com/bones-brigade/kafka-openshift-react-sparkline)
 
 and as always, have fun and happy hacking!

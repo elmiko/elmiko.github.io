@@ -23,9 +23,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4"
-     inkscape:cx="475.80908"
-     inkscape:cy="54.332987"
+     inkscape:zoom="2.8"
+     inkscape:cx="243.69272"
+     inkscape:cy="161.40053"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -110,8 +110,7 @@
        style="fill:#ffffff;stroke:#f2b22d;stroke-width:0.926971;stroke-miterlimit:4;stroke-dasharray:none"
        d="m 19.364277,19.222134 h 51.501139 c 2.823567,0 5.096692,2.273124 5.096692,5.096692 v 51.842741 c 0,2.823567 -2.273125,5.096692 -5.096692,5.096692 H 19.364277 c -2.823568,0 -5.096692,-2.273125 -5.096692,-5.096692 V 24.318826 c 0,-2.823568 2.273124,-5.096692 5.096692,-5.096692 z" />
     <g
-       aria-label="CAPI Management
-Cluster"
+       aria-label="CAPI Management Cluster"
        id="text843"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:6.35px;line-height:1.25;font-family:Overpass;-inkscape-font-specification:'Overpass Bold';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;stroke-width:0.264583">
       <path
@@ -245,8 +244,7 @@ Cluster"
        style="fill:#ffffff;stroke:#f2b22d;stroke-width:0.806375"
        d="m 129.06092,18.923912 h 52.60012 c 2.1722,0 3.92093,1.748733 3.92093,3.920927 v 12.163306 c 0,2.172193 -1.74873,3.920926 -3.92093,3.920926 h -52.60012 c -2.17219,0 -3.92093,-1.748733 -3.92093,-3.920926 V 22.844839 c 0,-2.172194 1.74874,-3.920927 3.92093,-3.920927 z" />
     <g
-       aria-label="Kubemark Cluster
-Control Plane"
+       aria-label="Kubemark Cluster Control Plane"
        id="text843-6"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:6.35px;line-height:1.25;font-family:Overpass;-inkscape-font-specification:'Overpass Bold';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;stroke-width:0.264583">
       <path
@@ -451,116 +449,6 @@ Control Plane"
        style="fill:#ffffff;stroke:#f2b22d;stroke-width:0.770164"
        d="m 21.46804,42.899384 h 47.29361 c 2.172194,0 3.920927,1.748733 3.920927,3.920926 v 12.163306 c 0,2.172194 -1.748733,3.920927 -3.920927,3.920927 H 21.46804 c -2.172193,0 -3.920927,-1.748733 -3.920927,-3.920927 V 46.82031 c 0,-2.172193 1.748734,-3.920926 3.920927,-3.920926 z" />
     <g
-       aria-label="Kubemark Cluster
-Compute Node"
-       id="text843-6-4"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:6.35px;line-height:1.25;font-family:Overpass;-inkscape-font-specification:'Overpass Bold';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;stroke-width:0.264583">
-      <path
-         d="m 21.792233,51.20015 h 0.889 l -1.5748,-2.8702 1.27,-1.5748 h -0.889 l -1.69545,2.1336 v -2.1336 h -0.762 v 4.445 h 0.762 v -1.2446 l 0.80645,-0.98425 z"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Overpass;-inkscape-font-specification:'Overpass Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
-         id="path895" />
-      <path
-         d="m 25.29108,51.20015 h 0.74295 V 47.9553 h -0.74295 v 1.8669 c 0,0.53975 -0.26035,0.74295 -0.65405,0.74295 -0.381,0 -0.6096,-0.22225 -0.6096,-0.75565 v -1.8542 h -0.74295 v 1.98755 c 0,0.9906 0.53975,1.3335 1.1557,1.3335 0.36195,0 0.6477,-0.127 0.8509,-0.38735 z"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Overpass;-inkscape-font-specification:'Overpass Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
-         id="path897" />
-      <path
-         d="m 28.447024,51.27635 c 0.8382,0 1.3589,-0.60325 1.3589,-1.7018 0,-1.06045 -0.5588,-1.69545 -1.3462,-1.69545 -0.33655,0 -0.5715,0.13335 -0.73025,0.3175 v -1.58115 l -0.74295,0.33655 v 4.24815 h 0.74295 V 50.9525 c 0.15875,0.19685 0.37465,0.32385 0.71755,0.32385 z m -0.0889,-0.7112 c -0.28575,0 -0.4953,-0.10795 -0.62865,-0.31115 v -1.35255 c 0.09525,-0.14605 0.3175,-0.3175 0.62865,-0.3175 0.45085,0 0.70485,0.34925 0.70485,0.9906 0,0.6096 -0.2413,0.9906 -0.70485,0.9906 z"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Overpass;-inkscape-font-specification:'Overpass Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
-         id="path899" />
-      <path
-         d="m 31.939514,51.27635 c 0.5207,0 0.9017,-0.2032 1.1557,-0.508 l -0.4699,-0.4826 c -0.17145,0.2286 -0.40005,0.33655 -0.6858,0.33655 -0.38735,0 -0.7366,-0.28575 -0.762,-0.762 h 2.15265 c 0.01905,-0.14605 0.0254,-0.32385 0.0254,-0.4572 0,-1.0414 -0.635,-1.524 -1.41605,-1.524 -0.90805,0 -1.4986,0.635 -1.4986,1.69545 0,1.0668 0.57785,1.7018 1.4986,1.7018 z m -0.75565,-2.032 c 0.0381,-0.508 0.3556,-0.7112 0.75565,-0.7112 0.33655,0 0.6477,0.2159 0.67945,0.7112 z"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Overpass;-inkscape-font-specification:'Overpass Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
-         id="path901" />
-      <path
-         d="m 37.927557,51.20015 h 0.74295 v -2.0701 c 0,-0.9144 -0.51435,-1.25095 -1.18745,-1.25095 -0.4191,0 -0.762,0.1397 -0.9779,0.4572 -0.17145,-0.31115 -0.46355,-0.4572 -0.8509,-0.4572 -0.33655,0 -0.6096,0.127 -0.79375,0.37465 V 47.9553 h -0.74295 v 3.24485 h 0.74295 V 49.3523 c 0,-0.5207 0.2413,-0.76835 0.6096,-0.76835 0.381,0 0.55245,0.24765 0.55245,0.75565 v 1.86055 h 0.74295 V 49.3523 c 0,-0.5207 0.23495,-0.76835 0.6096,-0.76835 0.381,0 0.55245,0.24765 0.55245,0.75565 z"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Overpass;-inkscape-font-specification:'Overpass Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
-         id="path903" />
-      <path
-         d="m 41.439105,51.20015 h 0.7239 V 49.111 c 0,-1.0922 -0.7112,-1.2319 -1.2827,-1.2319 -0.5461,0 -0.9779,0.15875 -1.27,0.3556 l 0.2286,0.60325 c 0.27305,-0.1905 0.5715,-0.3048 0.9652,-0.3048 0.42545,0 0.635,0.1651 0.635,0.59055 v 0.17145 c -0.2032,-0.1143 -0.46355,-0.17145 -0.76835,-0.17145 -0.64135,0 -1.27,0.32385 -1.27,1.07315 0,0.7112 0.508,1.0795 1.17475,1.0795 0.4318,0 0.70485,-0.17145 0.8636,-0.33655 z m -0.7239,-0.57785 c -0.38735,0 -0.59055,-0.17145 -0.59055,-0.42545 0,-0.31115 0.29845,-0.43815 0.66675,-0.43815 0.2413,0 0.47625,0.0508 0.6477,0.13335 v 0.4191 c -0.1651,0.17145 -0.4064,0.31115 -0.7239,0.31115 z"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Overpass;-inkscape-font-specification:'Overpass Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
-         id="path905" />
-      <path
-         d="m 43.051992,51.20015 h 0.74295 v -1.8161 c 0,-0.61595 0.32385,-0.7747 0.6096,-0.7747 0.24765,0 0.4191,0.0762 0.55245,0.17145 l 0.10795,-0.67945 c -0.1651,-0.1397 -0.36195,-0.22225 -0.60325,-0.22225 -0.32385,0 -0.53975,0.14605 -0.66675,0.41275 V 47.9553 h -0.74295 z"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Overpass;-inkscape-font-specification:'Overpass Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
-         id="path907" />
-      <path
-         d="m 48.45583,51.20015 -1.2065,-2.3241 0.92075,-0.92075 h -0.9017 l -0.9144,0.9398 v -2.27965 l -0.74295,0.34925 v 4.23545 h 0.74295 v -1.4351 l 0.36195,-0.3556 0.9271,1.7907 z"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Overpass;-inkscape-font-specification:'Overpass Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
-         id="path909" />
-      <path
-         d="m 52.475363,51.27635 c 0.79375,0 1.2827,-0.42545 1.55575,-1.0414 l -0.70485,-0.2667 c -0.2032,0.33655 -0.45085,0.5715 -0.8509,0.5715 -0.7493,0 -1.07315,-0.8255 -1.07315,-1.5621 0,-0.6985 0.254,-1.56845 1.07315,-1.56845 0.4191,0 0.64135,0.1905 0.8636,0.52705 l 0.6858,-0.31115 c -0.1905,-0.4699 -0.70485,-0.94615 -1.5494,-0.94615 -1.3716,0 -1.86055,1.27635 -1.86055,2.2987 0,1.09855 0.47625,2.2987 1.86055,2.2987 z"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Overpass;-inkscape-font-specification:'Overpass Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
-         id="path911" />
-      <path
-         d="m 54.837555,51.20015 h 0.74295 v -4.5847 l -0.74295,0.34925 z"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Overpass;-inkscape-font-specification:'Overpass Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
-         id="path913" />
-      <path
-         d="m 58.539596,51.20015 h 0.74295 V 47.9553 h -0.74295 v 1.8669 c 0,0.53975 -0.26035,0.74295 -0.65405,0.74295 -0.381,0 -0.6096,-0.22225 -0.6096,-0.75565 v -1.8542 h -0.74295 v 1.98755 c 0,0.9906 0.53975,1.3335 1.1557,1.3335 0.36195,0 0.6477,-0.127 0.8509,-0.38735 z"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Overpass;-inkscape-font-specification:'Overpass Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
-         id="path916" />
-      <path
-         d="m 61.276438,51.27635 c 0.7493,0 1.2446,-0.33655 1.2446,-0.9652 0,-0.61595 -0.43815,-0.88265 -1.0668,-1.0922 -0.3429,-0.1143 -0.635,-0.2286 -0.635,-0.42545 0,-0.17145 0.17145,-0.2667 0.43815,-0.2667 0.29845,0 0.48895,0.12065 0.6477,0.27305 l 0.51435,-0.4191 c -0.22225,-0.26035 -0.60325,-0.50165 -1.16205,-0.50165 -0.64135,0 -1.1557,0.3175 -1.1557,0.9017 0,0.5461 0.3683,0.81915 1.07315,1.0541 0.3683,0.14605 0.62865,0.24765 0.62865,0.47625 0,0.23495 -0.22225,0.3175 -0.52705,0.3175 -0.3556,0 -0.6223,-0.20955 -0.75565,-0.3429 l -0.508,0.4318 c 0.2413,0.3429 0.74295,0.5588 1.26365,0.5588 z"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Overpass;-inkscape-font-specification:'Overpass Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
-         id="path918" />
-      <path
-         d="m 64.235523,51.27635 c 0.2667,0 0.4953,-0.0508 0.67945,-0.14605 l 0.0889,-0.66675 c -0.17145,0.09525 -0.3429,0.14605 -0.508,0.14605 -0.19685,0 -0.27305,-0.127 -0.27305,-0.31115 V 48.603 h 0.7493 v -0.6477 h -0.7493 v -1.33985 l -0.74295,0.3556 v 0.98425 h -0.4826 v 0.6477 h 0.4826 v 1.8415 c 0,0.51435 0.22225,0.83185 0.75565,0.83185 z"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Overpass;-inkscape-font-specification:'Overpass Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
-         id="path920" />
-      <path
-         d="m 67.023165,51.27635 c 0.5207,0 0.9017,-0.2032 1.1557,-0.508 l -0.4699,-0.4826 c -0.17145,0.2286 -0.40005,0.33655 -0.6858,0.33655 -0.38735,0 -0.7366,-0.28575 -0.762,-0.762 h 2.15265 c 0.01905,-0.14605 0.0254,-0.32385 0.0254,-0.4572 0,-1.0414 -0.635,-1.524 -1.41605,-1.524 -0.90805,0 -1.4986,0.635 -1.4986,1.69545 0,1.0668 0.57785,1.7018 1.4986,1.7018 z m -0.75565,-2.032 c 0.0381,-0.508 0.3556,-0.7112 0.75565,-0.7112 0.33655,0 0.6477,0.2159 0.67945,0.7112 z"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Overpass;-inkscape-font-specification:'Overpass Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
-         id="path922" />
-      <path
-         d="m 69.201206,51.20015 h 0.74295 v -1.8161 c 0,-0.61595 0.32385,-0.7747 0.6096,-0.7747 0.24765,0 0.4191,0.0762 0.55245,0.17145 l 0.10795,-0.67945 c -0.1651,-0.1397 -0.36195,-0.22225 -0.60325,-0.22225 -0.32385,0 -0.53975,0.14605 -0.66675,0.41275 V 47.9553 h -0.74295 z"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Overpass;-inkscape-font-specification:'Overpass Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
-         id="path924" />
-      <path
-         d="m 25.545068,59.213849 c 0.79375,0 1.2827,-0.42545 1.55575,-1.0414 l -0.70485,-0.2667 c -0.2032,0.33655 -0.45085,0.5715 -0.8509,0.5715 -0.7493,0 -1.07315,-0.8255 -1.07315,-1.5621 0,-0.6985 0.254,-1.56845 1.07315,-1.56845 0.4191,0 0.64135,0.1905 0.8636,0.52705 l 0.6858,-0.31115 c -0.1905,-0.4699 -0.70485,-0.94615 -1.5494,-0.94615 -1.3716,0 -1.86055,1.27635 -1.86055,2.2987 0,1.09855 0.47625,2.2987 1.86055,2.2987 z"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Overpass;-inkscape-font-specification:'Overpass Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
-         id="path926" />
-      <path
-         d="m 29.183607,59.213849 c 0.9144,0 1.49225,-0.62865 1.49225,-1.69545 0,-1.06045 -0.57785,-1.7018 -1.49225,-1.7018 -0.90805,0 -1.4859,0.64135 -1.4859,1.7018 0,1.0668 0.57785,1.69545 1.4859,1.69545 z m 0,-0.7112 c -0.45085,0 -0.74295,-0.3683 -0.74295,-0.98425 0,-0.61595 0.2921,-0.99695 0.74295,-0.99695 0.46355,0 0.7493,0.381 0.7493,0.99695 0,0.61595 -0.28575,0.98425 -0.7493,0.98425 z"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Overpass;-inkscape-font-specification:'Overpass Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
-         id="path928" />
-      <path
-         d="m 35.279596,59.137649 h 0.74295 v -2.0701 c 0,-0.9144 -0.51435,-1.25095 -1.18745,-1.25095 -0.4191,0 -0.762,0.1397 -0.9779,0.4572 -0.17145,-0.31115 -0.46355,-0.4572 -0.8509,-0.4572 -0.33655,0 -0.6096,0.127 -0.79375,0.37465 v -0.29845 h -0.74295 v 3.24485 h 0.74295 v -1.84785 c 0,-0.5207 0.2413,-0.76835 0.6096,-0.76835 0.381,0 0.55245,0.24765 0.55245,0.75565 v 1.86055 h 0.74295 v -1.84785 c 0,-0.5207 0.23495,-0.76835 0.6096,-0.76835 0.381,0 0.55245,0.24765 0.55245,0.75565 z"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Overpass;-inkscape-font-specification:'Overpass Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
-         id="path930" />
-      <path
-         d="m 38.422843,59.213849 c 0.7874,0 1.33985,-0.62865 1.33985,-1.69545 0,-1.08585 -0.52705,-1.7018 -1.3335,-1.7018 -0.34925,0 -0.5842,0.13335 -0.74295,0.32385 v -0.24765 h -0.74295 v 4.5212 l 0.74295,-0.3429 v -1.1938 c 0.1524,0.1905 0.38735,0.33655 0.7366,0.33655 z m -0.10795,-0.7112 c -0.29845,0 -0.51435,-0.1524 -0.62865,-0.3175 v -1.3462 c 0.13335,-0.19685 0.33655,-0.3175 0.62865,-0.3175 0.4572,0 0.70485,0.4064 0.70485,0.99695 0,0.635 -0.254,0.98425 -0.70485,0.98425 z"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Overpass;-inkscape-font-specification:'Overpass Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
-         id="path932" />
-      <path
-         d="m 42.531282,59.137649 h 0.74295 v -3.24485 h -0.74295 v 1.8669 c 0,0.53975 -0.26035,0.74295 -0.65405,0.74295 -0.381,0 -0.6096,-0.22225 -0.6096,-0.75565 v -1.8542 h -0.74295 v 1.98755 c 0,0.9906 0.53975,1.3335 1.1557,1.3335 0.36195,0 0.6477,-0.127 0.8509,-0.38735 z"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Overpass;-inkscape-font-specification:'Overpass Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
-         id="path934" />
-      <path
-         d="m 45.179226,59.213849 c 0.2667,0 0.4953,-0.0508 0.67945,-0.14605 l 0.0889,-0.66675 c -0.17145,0.09525 -0.3429,0.14605 -0.508,0.14605 -0.19685,0 -0.27305,-0.127 -0.27305,-0.31115 v -1.69545 h 0.7493 v -0.6477 h -0.7493 v -1.33985 l -0.74295,0.3556 v 0.98425 h -0.4826 v 0.6477 h 0.4826 v 1.8415 c 0,0.51435 0.22225,0.83185 0.75565,0.83185 z"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Overpass;-inkscape-font-specification:'Overpass Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
-         id="path936" />
-      <path
-         d="m 47.966866,59.213849 c 0.5207,0 0.9017,-0.2032 1.1557,-0.508 l -0.4699,-0.4826 c -0.17145,0.2286 -0.40005,0.33655 -0.6858,0.33655 -0.38735,0 -0.7366,-0.28575 -0.762,-0.762 h 2.15265 c 0.01905,-0.14605 0.0254,-0.32385 0.0254,-0.4572 0,-1.0414 -0.635,-1.524 -1.41605,-1.524 -0.90805,0 -1.4986,0.635 -1.4986,1.69545 0,1.0668 0.57785,1.7018 1.4986,1.7018 z m -0.75565,-2.032 c 0.0381,-0.508 0.3556,-0.7112 0.75565,-0.7112 0.33655,0 0.6477,0.2159 0.67945,0.7112 z"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Overpass;-inkscape-font-specification:'Overpass Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
-         id="path938" />
-      <path
-         d="m 55.218553,59.137649 v -4.445 h -0.75565 v 2.76225 c 0,0.09525 0.0064,0.22225 0.01905,0.33655 -0.05715,-0.1143 -0.12065,-0.2413 -0.18415,-0.33655 l -1.79705,-2.76225 h -0.7366 v 4.445 h 0.75565 v -2.8067 c 0,-0.1016 -0.0064,-0.2286 -0.01905,-0.3302 0.05715,0.1143 0.127,0.2413 0.18415,0.3302 l 1.8415,2.8067 z"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Overpass;-inkscape-font-specification:'Overpass Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
-         id="path940" />
-      <path
-         d="m 57.561694,59.213849 c 0.9144,0 1.49225,-0.62865 1.49225,-1.69545 0,-1.06045 -0.57785,-1.7018 -1.49225,-1.7018 -0.90805,0 -1.4859,0.64135 -1.4859,1.7018 0,1.0668 0.57785,1.69545 1.4859,1.69545 z m 0,-0.7112 c -0.45085,0 -0.74295,-0.3683 -0.74295,-0.98425 0,-0.61595 0.2921,-0.99695 0.74295,-0.99695 0.46355,0 0.7493,0.381 0.7493,0.99695 0,0.61595 -0.28575,0.98425 -0.7493,0.98425 z"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Overpass;-inkscape-font-specification:'Overpass Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
-         id="path942" />
-      <path
-         d="m 61.035134,59.213849 c 0.3429,0 0.57785,-0.1143 0.73025,-0.31115 v 0.23495 h 0.74295 v -4.5847 l -0.74295,0.33655 v 1.2319 c -0.1524,-0.1778 -0.38735,-0.3048 -0.73025,-0.3048 -0.78105,0 -1.3462,0.635 -1.3462,1.69545 0,1.0795 0.52705,1.7018 1.3462,1.7018 z m 0.1143,-0.7112 c -0.4572,0 -0.71755,-0.40005 -0.71755,-0.9906 0,-0.64135 0.26035,-0.9906 0.71755,-0.9906 0.31115,0 0.5207,0.17145 0.61595,0.31115 v 1.3589 c -0.13335,0.2032 -0.33655,0.31115 -0.61595,0.31115 z"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Overpass;-inkscape-font-specification:'Overpass Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
-         id="path944" />
-      <path
-         d="m 64.800675,59.213849 c 0.5207,0 0.9017,-0.2032 1.1557,-0.508 l -0.4699,-0.4826 c -0.17145,0.2286 -0.40005,0.33655 -0.6858,0.33655 -0.38735,0 -0.7366,-0.28575 -0.762,-0.762 h 2.15265 c 0.01905,-0.14605 0.0254,-0.32385 0.0254,-0.4572 0,-1.0414 -0.635,-1.524 -1.41605,-1.524 -0.90805,0 -1.4986,0.635 -1.4986,1.69545 0,1.0668 0.57785,1.7018 1.4986,1.7018 z m -0.75565,-2.032 c 0.0381,-0.508 0.3556,-0.7112 0.75565,-0.7112 0.33655,0 0.6477,0.2159 0.67945,0.7112 z"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Overpass;-inkscape-font-specification:'Overpass Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
-         id="path946" />
-    </g>
-    <g
        aria-label="Pod"
        id="text837-1-3-89"
        style="font-size:6.35px;line-height:1.25;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono';letter-spacing:0px;word-spacing:0px;fill:#4c4c4c;stroke-width:0.264583">
@@ -617,6 +505,112 @@ Compute Node"
          d="m 85.015071,66.379194 c 0.70485,0 1.1557,-0.33655 1.1557,-0.92075 0,-0.61595 -0.46355,-0.86995 -1.0541,-1.0795 -0.36195,-0.14605 -0.6858,-0.2667 -0.6858,-0.53975 0,-0.2286 0.20955,-0.36195 0.53975,-0.36195 0.34925,0 0.57785,0.1651 0.71755,0.31115 l 0.381,-0.3175 c -0.23495,-0.2794 -0.5969,-0.48895 -1.0922,-0.48895 -0.6223,0 -1.0922,0.32385 -1.0922,0.85725 0,0.5334 0.4064,0.79375 1.0033,1.016 0.381,0.14605 0.74295,0.2921 0.74295,0.61595 0,0.28575 -0.26035,0.41275 -0.60325,0.41275 -0.34925,0 -0.62865,-0.20955 -0.79375,-0.38735 l -0.3937,0.33655 c 0.254,0.32385 0.6985,0.5461 1.17475,0.5461 z"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Overpass;-inkscape-font-specification:Overpass;fill:#4c4c4c;stroke-width:0.264583"
          id="path884" />
+    </g>
+    <g
+       aria-label="Kubemark Cluster
+Hollow Node"
+       id="text976"
+       style="font-size:6.35px;line-height:1.25;font-family:'Overpass Mono';-inkscape-font-specification:'Overpass Mono';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;stroke-width:0.264583">
+      <path
+         d="m 21.566983,50.896294 h 0.889 l -1.5748,-2.8702 1.27,-1.5748 h -0.889 l -1.69545,2.1336 v -2.1336 h -0.762 v 4.445 h 0.762 v -1.2446 l 0.80645,-0.98425 z"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Overpass;-inkscape-font-specification:'Overpass Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+         id="path1034" />
+      <path
+         d="m 25.06583,50.896294 h 0.74295 v -3.24485 h -0.74295 v 1.8669 c 0,0.53975 -0.26035,0.74295 -0.65405,0.74295 -0.381,0 -0.6096,-0.22225 -0.6096,-0.75565 v -1.8542 h -0.74295 v 1.98755 c 0,0.9906 0.53975,1.3335 1.1557,1.3335 0.36195,0 0.6477,-0.127 0.8509,-0.38735 z"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Overpass;-inkscape-font-specification:'Overpass Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+         id="path1036" />
+      <path
+         d="m 28.221774,50.972494 c 0.8382,0 1.3589,-0.60325 1.3589,-1.7018 0,-1.06045 -0.5588,-1.69545 -1.3462,-1.69545 -0.33655,0 -0.5715,0.13335 -0.73025,0.3175 v -1.58115 l -0.74295,0.33655 v 4.24815 h 0.74295 v -0.24765 c 0.15875,0.19685 0.37465,0.32385 0.71755,0.32385 z m -0.0889,-0.7112 c -0.28575,0 -0.4953,-0.10795 -0.62865,-0.31115 v -1.35255 c 0.09525,-0.14605 0.3175,-0.3175 0.62865,-0.3175 0.45085,0 0.70485,0.34925 0.70485,0.9906 0,0.6096 -0.2413,0.9906 -0.70485,0.9906 z"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Overpass;-inkscape-font-specification:'Overpass Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+         id="path1038" />
+      <path
+         d="m 31.714264,50.972494 c 0.5207,0 0.9017,-0.2032 1.1557,-0.508 l -0.4699,-0.4826 c -0.17145,0.2286 -0.40005,0.33655 -0.6858,0.33655 -0.38735,0 -0.7366,-0.28575 -0.762,-0.762 h 2.15265 c 0.01905,-0.14605 0.0254,-0.32385 0.0254,-0.4572 0,-1.0414 -0.635,-1.524 -1.41605,-1.524 -0.90805,0 -1.4986,0.635 -1.4986,1.69545 0,1.0668 0.57785,1.7018 1.4986,1.7018 z m -0.75565,-2.032 c 0.0381,-0.508 0.3556,-0.7112 0.75565,-0.7112 0.33655,0 0.6477,0.2159 0.67945,0.7112 z"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Overpass;-inkscape-font-specification:'Overpass Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+         id="path1040" />
+      <path
+         d="m 37.702307,50.896294 h 0.74295 v -2.0701 c 0,-0.9144 -0.51435,-1.25095 -1.18745,-1.25095 -0.4191,0 -0.762,0.1397 -0.9779,0.4572 -0.17145,-0.31115 -0.46355,-0.4572 -0.8509,-0.4572 -0.33655,0 -0.6096,0.127 -0.79375,0.37465 v -0.29845 h -0.74295 v 3.24485 h 0.74295 v -1.84785 c 0,-0.5207 0.2413,-0.76835 0.6096,-0.76835 0.381,0 0.55245,0.24765 0.55245,0.75565 v 1.86055 h 0.74295 v -1.84785 c 0,-0.5207 0.23495,-0.76835 0.6096,-0.76835 0.381,0 0.55245,0.24765 0.55245,0.75565 z"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Overpass;-inkscape-font-specification:'Overpass Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+         id="path1042" />
+      <path
+         d="m 41.213854,50.896294 h 0.7239 v -2.08915 c 0,-1.0922 -0.7112,-1.2319 -1.2827,-1.2319 -0.5461,0 -0.9779,0.15875 -1.27,0.3556 l 0.2286,0.60325 c 0.27305,-0.1905 0.5715,-0.3048 0.9652,-0.3048 0.42545,0 0.635,0.1651 0.635,0.59055 v 0.17145 c -0.2032,-0.1143 -0.46355,-0.17145 -0.76835,-0.17145 -0.64135,0 -1.27,0.32385 -1.27,1.07315 0,0.7112 0.508,1.0795 1.17475,1.0795 0.4318,0 0.70485,-0.17145 0.8636,-0.33655 z m -0.7239,-0.57785 c -0.38735,0 -0.59055,-0.17145 -0.59055,-0.42545 0,-0.31115 0.29845,-0.43815 0.66675,-0.43815 0.2413,0 0.47625,0.0508 0.6477,0.13335 v 0.4191 c -0.1651,0.17145 -0.4064,0.31115 -0.7239,0.31115 z"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Overpass;-inkscape-font-specification:'Overpass Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+         id="path1044" />
+      <path
+         d="m 42.826742,50.896294 h 0.74295 v -1.8161 c 0,-0.61595 0.32385,-0.7747 0.6096,-0.7747 0.24765,0 0.4191,0.0762 0.55245,0.17145 l 0.10795,-0.67945 c -0.1651,-0.1397 -0.36195,-0.22225 -0.60325,-0.22225 -0.32385,0 -0.53975,0.14605 -0.66675,0.41275 v -0.33655 h -0.74295 z"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Overpass;-inkscape-font-specification:'Overpass Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+         id="path1046" />
+      <path
+         d="m 48.23058,50.896294 -1.2065,-2.3241 0.92075,-0.92075 h -0.9017 l -0.9144,0.9398 v -2.27965 l -0.74295,0.34925 v 4.23545 h 0.74295 v -1.4351 l 0.36195,-0.3556 0.9271,1.7907 z"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Overpass;-inkscape-font-specification:'Overpass Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+         id="path1048" />
+      <path
+         d="m 52.250113,50.972494 c 0.79375,0 1.2827,-0.42545 1.55575,-1.0414 l -0.70485,-0.2667 c -0.2032,0.33655 -0.45085,0.5715 -0.8509,0.5715 -0.7493,0 -1.07315,-0.8255 -1.07315,-1.5621 0,-0.6985 0.254,-1.56845 1.07315,-1.56845 0.4191,0 0.64135,0.1905 0.8636,0.52705 l 0.6858,-0.31115 c -0.1905,-0.4699 -0.70485,-0.94615 -1.5494,-0.94615 -1.3716,0 -1.86055,1.27635 -1.86055,2.2987 0,1.09855 0.47625,2.2987 1.86055,2.2987 z"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Overpass;-inkscape-font-specification:'Overpass Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+         id="path1050" />
+      <path
+         d="m 54.612304,50.896294 h 0.74295 v -4.5847 l -0.74295,0.34925 z"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Overpass;-inkscape-font-specification:'Overpass Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+         id="path1052" />
+      <path
+         d="m 58.314346,50.896294 h 0.74295 v -3.24485 h -0.74295 v 1.8669 c 0,0.53975 -0.26035,0.74295 -0.65405,0.74295 -0.381,0 -0.6096,-0.22225 -0.6096,-0.75565 v -1.8542 h -0.74295 v 1.98755 c 0,0.9906 0.53975,1.3335 1.1557,1.3335 0.36195,0 0.6477,-0.127 0.8509,-0.38735 z"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Overpass;-inkscape-font-specification:'Overpass Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+         id="path1054" />
+      <path
+         d="m 61.051188,50.972494 c 0.7493,0 1.2446,-0.33655 1.2446,-0.9652 0,-0.61595 -0.43815,-0.88265 -1.0668,-1.0922 -0.3429,-0.1143 -0.635,-0.2286 -0.635,-0.42545 0,-0.17145 0.17145,-0.2667 0.43815,-0.2667 0.29845,0 0.48895,0.12065 0.6477,0.27305 l 0.51435,-0.4191 c -0.22225,-0.26035 -0.60325,-0.50165 -1.16205,-0.50165 -0.64135,0 -1.1557,0.3175 -1.1557,0.9017 0,0.5461 0.3683,0.81915 1.07315,1.0541 0.3683,0.14605 0.62865,0.24765 0.62865,0.47625 0,0.23495 -0.22225,0.3175 -0.52705,0.3175 -0.3556,0 -0.6223,-0.20955 -0.75565,-0.3429 l -0.508,0.4318 c 0.2413,0.3429 0.74295,0.5588 1.26365,0.5588 z"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Overpass;-inkscape-font-specification:'Overpass Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+         id="path1056" />
+      <path
+         d="m 64.010273,50.972494 c 0.2667,0 0.4953,-0.0508 0.67945,-0.14605 l 0.0889,-0.66675 c -0.17145,0.09525 -0.3429,0.14605 -0.508,0.14605 -0.19685,0 -0.27305,-0.127 -0.27305,-0.31115 v -1.69545 h 0.7493 v -0.6477 h -0.7493 v -1.33985 l -0.74295,0.3556 v 0.98425 h -0.4826 v 0.6477 h 0.4826 v 1.8415 c 0,0.51435 0.22225,0.83185 0.75565,0.83185 z"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Overpass;-inkscape-font-specification:'Overpass Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+         id="path1058" />
+      <path
+         d="m 66.797914,50.972494 c 0.5207,0 0.9017,-0.2032 1.1557,-0.508 l -0.4699,-0.4826 c -0.17145,0.2286 -0.40005,0.33655 -0.6858,0.33655 -0.38735,0 -0.7366,-0.28575 -0.762,-0.762 h 2.15265 c 0.01905,-0.14605 0.0254,-0.32385 0.0254,-0.4572 0,-1.0414 -0.635,-1.524 -1.41605,-1.524 -0.90805,0 -1.4986,0.635 -1.4986,1.69545 0,1.0668 0.57785,1.7018 1.4986,1.7018 z m -0.75565,-2.032 c 0.0381,-0.508 0.3556,-0.7112 0.75565,-0.7112 0.33655,0 0.6477,0.2159 0.67945,0.7112 z"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Overpass;-inkscape-font-specification:'Overpass Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+         id="path1061" />
+      <path
+         d="m 68.975955,50.896294 h 0.74295 v -1.8161 c 0,-0.61595 0.32385,-0.7747 0.6096,-0.7747 0.24765,0 0.4191,0.0762 0.55245,0.17145 l 0.10795,-0.67945 c -0.1651,-0.1397 -0.36195,-0.22225 -0.60325,-0.22225 -0.32385,0 -0.53975,0.14605 -0.66675,0.41275 v -0.33655 h -0.74295 z"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Overpass;-inkscape-font-specification:'Overpass Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+         id="path1063" />
+      <path
+         d="m 29.526695,58.833794 h 0.75565 v -4.445 h -0.75565 v 1.79705 h -1.9431 v -1.79705 h -0.762 v 4.445 h 0.762 v -1.9304 h 1.9431 z"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Overpass;-inkscape-font-specification:'Overpass Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+         id="path1065" />
+      <path
+         d="m 32.625484,58.909994 c 0.9144,0 1.49225,-0.62865 1.49225,-1.69545 0,-1.06045 -0.57785,-1.7018 -1.49225,-1.7018 -0.90805,0 -1.4859,0.64135 -1.4859,1.7018 0,1.0668 0.57785,1.69545 1.4859,1.69545 z m 0,-0.7112 c -0.45085,0 -0.74295,-0.3683 -0.74295,-0.98425 0,-0.61595 0.2921,-0.99695 0.74295,-0.99695 0.46355,0 0.7493,0.381 0.7493,0.99695 0,0.61595 -0.28575,0.98425 -0.7493,0.98425 z"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Overpass;-inkscape-font-specification:'Overpass Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+         id="path1067" />
+      <path
+         d="m 34.943223,58.833794 h 0.74295 v -4.5847 l -0.74295,0.34925 z"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Overpass;-inkscape-font-specification:'Overpass Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+         id="path1069" />
+      <path
+         d="m 36.702164,58.833794 h 0.74295 v -4.5847 l -0.74295,0.34925 z"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Overpass;-inkscape-font-specification:'Overpass Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+         id="path1071" />
+      <path
+         d="m 39.756504,58.909994 c 0.9144,0 1.49225,-0.62865 1.49225,-1.69545 0,-1.06045 -0.57785,-1.7018 -1.49225,-1.7018 -0.90805,0 -1.4859,0.64135 -1.4859,1.7018 0,1.0668 0.57785,1.69545 1.4859,1.69545 z m 0,-0.7112 c -0.45085,0 -0.74295,-0.3683 -0.74295,-0.98425 0,-0.61595 0.2921,-0.99695 0.74295,-0.99695 0.46355,0 0.7493,0.381 0.7493,0.99695 0,0.61595 -0.28575,0.98425 -0.7493,0.98425 z"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Overpass;-inkscape-font-specification:'Overpass Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+         id="path1073" />
+      <path
+         d="m 42.658442,58.833794 h 0.65405 l 0.47625,-1.7526 c 0.03175,-0.127 0.08255,-0.33655 0.1016,-0.4445 0.0127,0.10795 0.06985,0.3175 0.1016,0.4445 l 0.47625,1.7526 h 0.6604 l 0.889,-3.24485 h -0.73025 l -0.42545,1.79705 c -0.03175,0.13335 -0.05715,0.27305 -0.0762,0.381 -0.01905,-0.10795 -0.0508,-0.254 -0.08255,-0.381 l -0.4699,-1.79705 h -0.67945 l -0.47625,1.79705 c -0.03175,0.127 -0.0635,0.27305 -0.08255,0.381 -0.01905,-0.10795 -0.04445,-0.24765 -0.0762,-0.381 l -0.4191,-1.79705 h -0.73025 z"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Overpass;-inkscape-font-specification:'Overpass Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+         id="path1075" />
+      <path
+         d="m 51.789726,58.833794 v -4.445 h -0.75565 v 2.76225 c 0,0.09525 0.0063,0.22225 0.01905,0.33655 -0.05715,-0.1143 -0.12065,-0.2413 -0.18415,-0.33655 l -1.79705,-2.76225 h -0.7366 v 4.445 h 0.75565 v -2.8067 c 0,-0.1016 -0.0063,-0.2286 -0.01905,-0.3302 0.05715,0.1143 0.127,0.2413 0.18415,0.3302 l 1.8415,2.8067 z"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Overpass;-inkscape-font-specification:'Overpass Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+         id="path1077" />
+      <path
+         d="m 54.132867,58.909994 c 0.9144,0 1.49225,-0.62865 1.49225,-1.69545 0,-1.06045 -0.57785,-1.7018 -1.49225,-1.7018 -0.90805,0 -1.4859,0.64135 -1.4859,1.7018 0,1.0668 0.57785,1.69545 1.4859,1.69545 z m 0,-0.7112 c -0.45085,0 -0.74295,-0.3683 -0.74295,-0.98425 0,-0.61595 0.2921,-0.99695 0.74295,-0.99695 0.46355,0 0.7493,0.381 0.7493,0.99695 0,0.61595 -0.28575,0.98425 -0.7493,0.98425 z"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Overpass;-inkscape-font-specification:'Overpass Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+         id="path1079" />
+      <path
+         d="m 57.606308,58.909994 c 0.3429,0 0.57785,-0.1143 0.73025,-0.31115 v 0.23495 h 0.74295 v -4.5847 l -0.74295,0.33655 v 1.2319 c -0.1524,-0.1778 -0.38735,-0.3048 -0.73025,-0.3048 -0.78105,0 -1.3462,0.635 -1.3462,1.69545 0,1.0795 0.52705,1.7018 1.3462,1.7018 z m 0.1143,-0.7112 c -0.4572,0 -0.71755,-0.40005 -0.71755,-0.9906 0,-0.64135 0.26035,-0.9906 0.71755,-0.9906 0.31115,0 0.5207,0.17145 0.61595,0.31115 v 1.3589 c -0.13335,0.2032 -0.33655,0.31115 -0.61595,0.31115 z"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Overpass;-inkscape-font-specification:'Overpass Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+         id="path1081" />
+      <path
+         d="m 61.371848,58.909994 c 0.5207,0 0.9017,-0.2032 1.1557,-0.508 l -0.4699,-0.4826 c -0.17145,0.2286 -0.40005,0.33655 -0.6858,0.33655 -0.38735,0 -0.7366,-0.28575 -0.762,-0.762 h 2.15265 c 0.01905,-0.14605 0.0254,-0.32385 0.0254,-0.4572 0,-1.0414 -0.635,-1.524 -1.41605,-1.524 -0.90805,0 -1.4986,0.635 -1.4986,1.69545 0,1.0668 0.57785,1.7018 1.4986,1.7018 z m -0.75565,-2.032 c 0.0381,-0.508 0.3556,-0.7112 0.75565,-0.7112 0.33655,0 0.6477,0.2159 0.67945,0.7112 z"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Overpass;-inkscape-font-specification:'Overpass Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+         id="path1083" />
     </g>
   </g>
 </svg>

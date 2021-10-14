@@ -85,7 +85,9 @@ I might need.
 No reason to duplicate the excellent guidance given by the project itself, I usually follow
 the [clusterctl for Developers](https://cluster-api.sigs.k8s.io/clusterctl/developers.html)
 documentation. I build the `clusterctl` binary, and also the controller images for Cluster API
-and the Docker provider.
+and the Docker provider. If you are following these instructions, don't forget to checkout the
+`v0.4.2` tag before building otherwise you will most likely run into strange API errors when
+deploying your manifests.
 
 ### Install Cluster API Kubemark provider
 

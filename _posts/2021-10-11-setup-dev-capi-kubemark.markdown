@@ -8,6 +8,8 @@ categories:
 
 *Note: at the time of writing, these instructions are using 0.4.2 Cluster API and 1.21.1 kubernetes*
 
+*special thanks to Alex Gradouski and Abhijit Gaikwad for helping to debug these instructions*
+
 I think there has been some really cool development happening in the
 [Cluster API](https://cluster-api.sigs.k8s.io) community around testing. I know
 that might not sound like the most exciting thing, but from the perspective of

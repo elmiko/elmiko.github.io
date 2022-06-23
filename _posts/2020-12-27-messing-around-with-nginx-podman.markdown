@@ -29,7 +29,7 @@ and I need those names to be meaningful in the network namespace.
 I need to create a network that Podman will use to address the container by name. To do that
 I use:
 ```
-podman create network echogolemnet
+podman network create echogolemnet
 ```
 When I create the container for this experiment I will use the `--network echogolemnet` to
 ensure they are all placed in the same network space.

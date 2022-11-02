@@ -150,7 +150,7 @@ The lightning talk was also great, a hot, fast, ride through the last 3-4 months
 of OKD community, and some of the things we are excited about. The biggest news for
 us is the creation of the [OKD Streams](https://cloud.redhat.com/blog/okd-streams-building-the-next-generation-of-okd-together)
 and the corresponding Tekton build pipeline
-that the community will operate. This empowers the commnity to truly own the
+that the community will operate. This empowers the community to truly own the
 creation and experimentation that happens around a project of this size, I am
 overjoyed to see this happening. As pointed out by [Karsten Wade](https://www.redhat.com/en/authors/karsten-wade),
 there was pivotal moment in Fedora's growth where the build and testing

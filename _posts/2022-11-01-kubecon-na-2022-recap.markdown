@@ -297,7 +297,7 @@ history that extends beyond our current epoch. Seeing this statue stirred some
 emotion in me about the concept of _portaging_ our canoes across the dry land
 to find other streams where we might paddle. Sometimes the open source community
 feels that way too. You might find a problem, run out of water to paddle, so you
-must pickup your canoe and carry it across the dry land until you can access to
+must pickup your canoe and carry it across the dry land until you can gain access to
 safe water again.
 
 I know it may seems trite to bring up the concept of _carrying our own canoes_,

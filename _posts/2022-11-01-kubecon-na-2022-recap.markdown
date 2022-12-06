@@ -6,9 +6,6 @@ date: 2022-11-01
 categories:
 ---
 
-_note: videos for the talks are still being processed, I will update this post
-with youtube links when they become available._
-
 I'm super excited to write this after-con blog, not just because it was
 another face-to-face KubeCon but also because it was in Detroit, my home town.
 So without further delay, let's dive in!

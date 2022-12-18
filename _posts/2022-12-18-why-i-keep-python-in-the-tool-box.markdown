@@ -306,7 +306,7 @@ standard library implementation for the [http.server.SimpleHTTPRequestHandler](h
 create a richer interface. By default, the `SimpleHTTPRequestHandler` will create
 the directory browser view that is familiar to anyone who has tried running
 `python -m http.server` in their terminal (go try now if you haven't XD). But, in
-biloba.py I'd like to override that action when I see a request for `/index.html`
+biloba.py I'd like to override that action when I see a request for `/`
 or any other URL that looks like a directory. I'm overriding the `do_GET` function
 of the base class so that I can inspect every HTTP GET request that is received.
 

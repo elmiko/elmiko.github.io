@@ -172,10 +172,10 @@ html_template = '''
 <head>
 <title>Biloba</title>
 <style>
-span.highlight {{
+span.highlight {
     background: #bababa;
     display: block;
-}}
+}
 </style>
 </head>
 <body>

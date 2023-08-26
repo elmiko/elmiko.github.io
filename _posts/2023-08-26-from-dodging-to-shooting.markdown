@@ -439,6 +439,8 @@ Then change the HUD GDscript to update the message properly.
 Hopefully, if you've made it this far things are still working for you. If you are
 having troubles getting your version to run properly, you can find a reference
 that was the inspiration for this tutorial at [gitlab.com/elmiko/shoot-the-creeps][gitlab].
+If you find errors in this tutorial or the associated source code, please do not
+hesitate to [open an issue in the repository][gitlab-issue].
 
 The game is fairly simple with the defaults that I chose, you can have some fun by changing
 the bullet timer, velocity, and sizes of the mobs, player, and bullets. I wrote this
@@ -469,3 +471,4 @@ out there, and as always, happy hacking!
 [gitlab]: https://gitlab.com/elmiko/shoot-the-creeps
 [pythonlove]: https://notes.elmiko.dev/2022/12/18/why-i-keep-python-in-the-tool-box.html
 [rigidbody2d]: https://docs.godotengine.org/en/stable/classes/class_rigidbody2d.html
+[gitlab-issue]: https://gitlab.com/elmiko/shoot-the-creeps/-/issues

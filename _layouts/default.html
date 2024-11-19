@@ -84,12 +84,16 @@
         </div>
       </div>
 
-      <div>
+      <div class="list-group">
         <strong>Recent Posts</strong>
           {% for post in site.posts offset:1 limit:3 %}
-          <ul class="list-unstyled">
+          <a href="{{ post.url }}" class="list-group-item">
+            <span>{{ post.title }}</a>
+          <!--
+          <ul id="recent-posts" class="list-unstyled">
             <li><a href="{{ post.url }}"><small>{{ post.title }}</small></a></li>
           </ul>
+          -->
           {% endfor %}
       </div>
     </div>

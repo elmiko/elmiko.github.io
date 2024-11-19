@@ -47,3 +47,7 @@ pre.highlight {
 .navbar-nav > li > a.navbar-link {
     color: #428bca;
 }
+
+ul {
+    margin-bottom: 2em;
+}

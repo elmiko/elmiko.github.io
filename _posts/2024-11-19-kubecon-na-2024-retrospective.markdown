@@ -48,13 +48,13 @@ The round table discussions were interesting and I ended up talking with a few f
 
 Commons also had one of the best pieces of OpenShift swag I have ever had the pleasure of snagging: OpenShift keycaps!
 
-<img src="/img/kubecon-na-2024-keycaps.jpg" class="img-responsive center-block" alt="Selfie out front of kubecon">
+<img src="/img/kubecon-na-2024-keycaps.jpg" class="img-responsive center-block" alt="openshift keycaps in a bucket">
 
 ## KubeCon Day 1, Wednesday November 13
 
 Wednesday brought the official start of KubeCon. I followed the herd (we were told attendance reached 9,200 people this year) to the first day keynotes and with that, KubeCon had begun. Two of the big themes for this KubeCon were AI, and security, with the first two days being dedicated to those topics respectively. The first day keynotes seemed well attended and there was a buzz in the air that was familiar. Immediately after the keynotes was the stampede to the exhibit hall.
 
-<img src="/img/kubecon-na-2024-curling.jpg" class="img-responsive center-block" alt="Selfie out front of kubecon">
+<img src="/img/kubecon-na-2024-curling.jpg" class="img-responsive center-block" alt="inflatable curling strip">
 
 The exhibitor hall was fun, as usual, with some special highlights being the pickleball court and the inflatable curling. It didn’t feel over-crowded or empty, and the times I visited there were plenty of people walking around. The project pavilion was also in the exhibitor hall and I ended up doing an unscheduled impromptu demonstration of the Karpenter Cluster API project, which was fun but also chaotic. This demonstration led to several _hallway track_ conversations on Wednesday about Karpenter and Cluster API. While AI and security were the conference themes, one of my themes for the week was definitely Karpenter as I got into many more conversations about it than I anticipated.
 
@@ -71,7 +71,7 @@ Near the end of the day, I ended up getting into a deep discussion with some fri
 
 Wednesday evening was also the “Booth Crawl” at the exhibitor hall, but as I had dinner plans with my colleagues from Red Hat, I skipped out for the evening.
 
-<img src="/img/kubecon-na-2024-booth.jpg" class="img-responsive center-block" alt="Selfie out front of kubecon">
+<img src="/img/kubecon-na-2024-booth.jpg" class="img-responsive center-block" alt="red hat booth">
 
 ## KubeCon Day 2, Thursday November 14
 
@@ -113,7 +113,7 @@ I’m happy and proud to say that the talk went well despite the standard techni
 
 And with that, I started to make my way out of the building for the last time at this KubeCon. I did see a few people on the way out, and got my last hugs and well-wishes in. It was an amazing and exhausting experience as always, and I’m hopeful I can attend in London.
 
-<img src="/img/kubecon-na-2024-leaving.jpg" class="img-responsive center-block" alt="Selfie out front of kubecon">
+<img src="/img/kubecon-na-2024-leaving.jpg" class="img-responsive center-block" alt="looking down an empty hall">
 
 ## Thoughts and takeaways
 

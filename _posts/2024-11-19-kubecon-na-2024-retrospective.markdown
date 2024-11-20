@@ -60,8 +60,8 @@ The exhibitor hall was fun, as usual, with some special highlights being the pic
 
 I saw a bunch of talks on Wednesday, and I would like to call attention to a couple that I think are worth watching when they are posted:
 
-* [Architecting Tomorrow: The Heterogeneous Compute Resources for New Types of Workloads - Alexander Kanevskiy, Intel Finland](https://sched.co/1i7ke)
-* [From Observability to Performance - Nadia Pinaeva, Red Hat & Antonio Ojea, Google](https://sched.co/1i7mE)
+* [Architecting Tomorrow: The Heterogeneous Compute Resources for New Types of Workloads - Alexander Kanevskiy, Intel Finland](https://sched.co/1i7ke) -- [Watch on YouTube](https://www.youtube.com/watch?v=jyovyLafMOs)
+* [From Observability to Performance - Nadia Pinaeva, Red Hat & Antonio Ojea, Google](https://sched.co/1i7mE) -- [Watch on YouTube](https://www.youtube.com/watch?v=uYo2O3jbJLk)
 
 The first talk on heterogeneous compute resources gave a window into the future of exposing more details about processors to help make scheduling and processing more efficient. Alexander gave a nice overview of how different workloads can be adversely affected by some processor architectures. In a world where nanoseconds can make a difference, this is a great talk to understand how to identify and minimize those bottlenecks.
 
@@ -85,17 +85,17 @@ I was rewarded with an hour of discussions and group activities where I got to h
 
 I do a lot of work with the Cluster Autoscaler and Karpenter projects, so I was keenly interested to see the SIG Autoscaling update, delivered by my friend from the Cluster API community, Jack Francis. It was a nice overview covering all the projects that the SIG sponsors, how users can get involved, and some crystal ball gazing about what is coming next for the SIG. If you are interested in node or pod autoscaling, definitely watch the recording.
 
-* [SIG Autoscaling Projects Update - Jack Francis, Microsoft](https://kccncna2024.sched.com/event/1howV/sig-autoscaling-projects-update-jack-francis-microsoft)
+* [SIG Autoscaling Projects Update - Jack Francis, Microsoft](https://kccncna2024.sched.com/event/1howV/sig-autoscaling-projects-update-jack-francis-microsoft) -- [Watch on YouTube](https://www.youtube.com/watch?v=3fr2J3G1s1U)
 
 Something I love being a part of at KubeCon is the SIG Meet n’ Greet. It is an occasion for the Kubernetes SIGs (Special Interest Groups) to make some space and do a little self-promotion. I represented SIG Cloud Provider and had a number of interesting discussions with people who are interested in what the SIG does, and also how they can build cloud controllers for their own infrastructure offerings. I also had a few people approach me about Karpenter related topics, which was nice.
 
 My friend and teammate Joel Speed also had a talk on Thursday about CEL validation budgets. If you are using CEL with your Kubernetes API designs, I think it’s worth watching the recording to learn the deep details about how validation budgets are calculated.
 
-* [Exceeded Your Validation Cost Budget? Now What? - Joel Speed, Red Hat](https://sched.co/1i7nv)
+* [Exceeded Your Validation Cost Budget? Now What? - Joel Speed, Red Hat](https://sched.co/1i7nv) -- [Watch on YouTube](https://www.youtube.com/watch?v=IfaPAqDfJHk)
 
  I ended my day at the conference by attending a talk on the OpenCost project. I am keenly interested in exploring how the Cluster API project could expose information about instance pricing. I’m not quite sure what the best way to do this is yet, but I have been wanting to explore OpenCost to see if it might be appropriate for Cluster API. I’m still not sure, but the talk I watched did help me understand some basics about OpenCost. It wasn’t quite what I was expecting, but I found it interesting as a primer.
 
- * [Measuring All the Costs with OpenCost Plugins - Alex Meijer, Stackwatch](https://sched.co/1i7oQ)
+ * [Measuring All the Costs with OpenCost Plugins - Alex Meijer, Stackwatch](https://sched.co/1i7oQ) -- [Watch on YouTube](https://www.youtube.com/watch?v=yLAx2z4FqSk)
 
 ## KubeCon Day 3, Friday November 15
 
@@ -103,11 +103,11 @@ Last day of KubeCon, for now.
 
 I didn’t have a lot on my agenda for Friday aside from co-presenting the SIG Cloud Provider maintainer track talk. But, I was happily surprised to see this talk about flaky tests and continuous integration. It gave me a better window into how the Kubernetes testing infrastructure is configured and deployed. I am keenly interested in this because I would like to improve the state of testing for cloud controllers. And, as luck would have it, this talk about flaky CI was happening a few slots before our talk related to testing. I highly recommend watching the recording if you have an interest in Kubernetes continuous integration testing.
 
-* [Achieving and Maintaining a Healthy CI with Zero Test Flakes - Antonio Ojea, Michelle Shepardson & Benjamin Elder, Google](https://sched.co/1hoxc)
+* [Achieving and Maintaining a Healthy CI with Zero Test Flakes - Antonio Ojea, Michelle Shepardson & Benjamin Elder, Google](https://sched.co/1hoxc) -- [Watch on YouTube](https://www.youtube.com/watch?v=hl3jjCTTL50)
 
 Fridays at KubeCon are always tough for me as I am usually exhausted but also want to catch up with people before we all leave. This year was no different. I spent much of my time walking around and having discussions with people (shoutout to Kevin on our talks of what will disrupt Kubernetes and the state of homelab clusters). But, as the day, and con, were winding down it was time to deliver our talk for SIG Cloud Provider:
 
-* [Building a More Resilient Future with Advanced Cloud Provider Testing - Michael McCune, Red Hat & Bridget Kromhout, Microsoft](https://sched.co/1hoyJ)
+* [Building a More Resilient Future with Advanced Cloud Provider Testing - Michael McCune, Red Hat & Bridget Kromhout, Microsoft](https://sched.co/1hoyJ) -- [Watch on YouTube](https://www.youtube.com/watch?v=5FKMFlooC6c)
 
 I’m happy and proud to say that the talk went well despite the standard technical shenanigans at the beginning. I also want to say a big thank you to Bridget as well. I have had the pleasure of co-presenting with Bridget a few times now and she is a talented and amazing person to be on stage with. I was humbled to hear the audience's reactions to our presentation and I’m so happy that people enjoyed themselves and appreciated our delivery. Looking forward to having another opportunity like this in the future.
 

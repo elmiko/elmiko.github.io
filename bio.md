@@ -10,7 +10,7 @@ title: elmiko's biography
 <p>
 Michael McCune is a software developer creating open source infrastructure
 and applications for cloud platforms. He has a passion for problem solving
-and team building, and a lifelong love of music, food, and culture.
+and team building, and a lifelong love of music, food, gaming, and culture.
 </p>
 
 </div>

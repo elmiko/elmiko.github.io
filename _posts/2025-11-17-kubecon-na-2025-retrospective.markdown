@@ -175,6 +175,8 @@ blocks for the future of kubernetes. We had a nice attendence for our event and 
 the future, and it seemed like our discussion and energy permeated into the audience with several nice comments directed towards the SIG at
 the end.
 
+<img src="/img/kubecon-na-2025-sigcp.jpg" class="img-responsive center-block" alt="SIG Cloud Provider">
+
 ## Thoughts and takeaways
 
 This KubeCon seemed smaller than years past. I can only assume this was due to travel and the behavior of the government of the

@@ -264,7 +264,7 @@ made it this far, thank you, be safe out there, and as always happy hacking!
 [ms-cas]: https://maintainersummiteu2026.sched.com/event/2EWf1/cluster-autoscaler-evolution-kuba-tuznik-google-jack-francis-microsoft
 [ms-nl]: https://maintainersummiteu2026.sched.com/event/2EWhP/unconference-session-node-lifecycle-state-needs-a-real-api
 [ms-photo]: https://www.flickr.com/photos/143247548@N03/55163324677/in/album-72177720332630036
-[gh-was]: https://github.com/kubernetes/enhancements/issues?q=state%3Aopen%20label%3Aarea%2Fworkload-aware
+[gh-was]: https://github.com/kubernetes/enhancements/issues?q=label%3Aarea%2Fworkload-aware
 [kc-panel1]: https://kccnceu2026.sched.com/event/2EoKz/from-static-tokens-to-attestation-the-evolution-of-secure-node-joining-ciprian-hacman-jack-francis-microsoft-michael-mccune-josephine-pfeiffer-red-hat-justin-santa-barbara-google
 [kc-101]: https://kccnceu2026.sched.com/event/2ITlD/kubernetes-contribution-101
 [kc-mg]: https://kccnceu2026.sched.com/event/2H66n/kubernetes-meet-+-greet

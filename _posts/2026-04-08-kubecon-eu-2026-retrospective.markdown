@@ -164,7 +164,7 @@ future generations.
 After the 101 session I had to find the panel where I was a particpant, unfortunately the room was on the opposite end of the convention
 center and I had to make haste. Thankfully, I made it with time to spare. The panel went great and we had about 150 people in the room to
 hear us talk about a possible future for secure booting and attestation in Kubernetes. In some respects this is new territory for the
-Kubernetes community tackle, although there are bespoke implementations of this style of booting, we would like to develop best practices
+Kubernetes community to tackle, although there are bespoke implementations of this style of booting, we would like to develop best practices
 that the community as a whole can rely on. This will be important if we want to include secure boot activities in projects like kOps and
 Cluster API. While there is more work to be done, we had an excellent conversation and got many good ideas from interacting with the audience.
 I'm hopeful that some of the work I'm doing with the Cluster API community to improve ignition support will also help with the workflows
@@ -224,8 +224,8 @@ home lab for playing around with bootc, especially since I think it will help wi
 <img src="/img/kubecon-eu-2026-ai.jpg" class="img-responsive center-block" alt="ai doggo">
 
 I would be neglectful if I didn't mention the presence of AI at KubeCon. There were plenty of talks and demonstrations with people showing off
-how they are using AI to build value and also integrate AI into their products. Additionally there was no shortage of talk about how AI
-is affecting and will continue to influence the software development process. I found the discussion good and the amount of AI related talks
+how they are using AI to build value and also integrate AI into their products. Additionally there was no shortage of talks about how AI
+is affecting, and will continue to influence, the software development process. I found the discussion good and the amount of AI related talks
 only a little oppressive. One thing I noted that is increasing from the hallway track perspective is that many people are getting tired of
 seeing AI related talks and want to see more technical Kubernetes information. I saw several non-AI sessions that were packed to capacity,
 and my informal discussions with people seemed to indicate a weariness of AI and also a desire to find spaces where AI was not being

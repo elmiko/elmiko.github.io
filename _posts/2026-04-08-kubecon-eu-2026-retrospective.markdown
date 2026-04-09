@@ -110,7 +110,7 @@ hold.
 ## Workload Aware Scheduling Design Summit at Google, Monday March 23
 
 Coming close on the heels of the Dynamic Resource Allocation (DRA) designs that have helped to improve the state
-of advanced hardware utilizationin Kubernetes, comes the next big design work: workload aware scheduling. I am thankful to
+of advanced hardware utilization in Kubernetes, comes the next big design work: workload aware scheduling. I am thankful to
 John Belamaric and Wojciech Tyczynski from Google who organized this design summit where many SIG tech leads and
 chairs, as well as interested parties, were invited to participate in architecting the future of Kubernetes scheduling.
 This design summit was focused on the myriad problems that need to be addressed so that we can improve the story

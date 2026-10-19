@@ -26,13 +26,13 @@ layout: base
   </div>
 
   <div class="list-group">
-    <strong>Pinned</strong>
+    <strong>Articles</strong>
     <a href="/in-support-of-human-cognition" class="pinned list-group-item">
       <span>In Support of Human Cognition</span></a>
   </div>
 
   <div class="list-group">
-    <strong>Recent</strong>
+    <strong>Recent Notes</strong>
     {% for post in site.posts offset:1 limit:3 %}
     <a href="{{ post.url }}" class="list-group-item">
       <span>{{ post.title }}</a>

@@ -1,124 +1,46 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{{ page.title }}</title>
-
-<!-- RSS Feed -->
-<link rel="alternate" type="application/rss+xml" title="RSS" href="{{ site.url }}/feed.xml">
-
-<!-- syntax highlighting CSS -->
-<link rel="stylesheet" href="/css/syntax.css">
-
-<!-- Bootstrap CSS -->
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
-<!-- Google Fonts
-<link href='http://fonts.googleapis.com/css?family=Molle:400italic' rel='stylesheet' type='text/css'>
- -->
-<!-- Custom CSS -->
-<link href="/css/custom.css" rel="stylesheet">
-
-</head>
-<body>
-
-<nav class="navbar navbar-default" role="navigation">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar-collapse">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand font-molle" href="/">{{ site.name }}</a>
-    </div>
-    <div class="collapse navbar-collapse" id="bs-navbar-collapse">
-      <ul class="nav navbar-nav">
-        <li><a class="navbar-link" href="/archive.html">Archive</a></li>
-      </ul>
-      {% if paginator %}
-      <ul class="nav navbar-nav navbar-right">
-        {% if paginator.previous_page %}
-        {% if paginator.previous_page == 1 %}
-        <li><a href="/"
-             class="navbar-link">Newer</a></li>
-        {% else %}
-        <li><a href="/page{{ paginator.previous_page }}"
-             class="navbar-link">Newer</a></li>
-        {% endif %}
-        {% else %}
-        <li><button class="btn btn-link navbar-btn" disabled="disabled">Newer</button></li>
-        {% endif %}
-        {% if paginator.next_page %}
-        <li><a href="/page{{ paginator.next_page }}"
-             class="navbar-link">Older</a></li>
-        {% else %}
-        <li><button class="btn btn-link navbar-btn" disabled="disabled">Next</button></li>
-        {% endif %}
-      </ul>
-      {% endif %}
+---
+layout: base
+---
+<div class="col-md-9 content">
+  {{ content }}
+</div>
+<div class="col-md-3">
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <p>
+      <a href="/bio" alt="biography">Michael McCune</a>
+      <br /><br />
+      <a href="mailto:msm@opbstudios.com" class="icon-link">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+          <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+        </svg>
+        msm@opbstudios.com</a>
+      <br />
+      <a rel="me" href="https://fosstodon.org/@elmiko" target="_blank" class="icon-link">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-mastodon" viewBox="0 0 16 16">
+          <path d="M11.19 12.195c2.016-.24 3.77-1.475 3.99-2.603.348-1.778.32-4.339.32-4.339 0-3.47-2.286-4.488-2.286-4.488C12.062.238 10.083.017 8.027 0h-.05C5.92.017 3.942.238 2.79.765c0 0-2.285 1.017-2.285 4.488l-.002.662c-.004.64-.007 1.35.011 2.091.083 3.394.626 6.74 3.78 7.57 1.454.383 2.703.463 3.709.408 1.823-.1 2.847-.647 2.847-.647l-.06-1.317s-1.303.41-2.767.36c-1.45-.05-2.98-.156-3.215-1.928a4 4 0 0 1-.033-.496s1.424.346 3.228.428c1.103.05 2.137-.064 3.188-.189zm1.613-2.47H11.13v-4.08c0-.859-.364-1.295-1.091-1.295-.804 0-1.207.517-1.207 1.541v2.233H7.168V5.89c0-1.024-.403-1.541-1.207-1.541-.727 0-1.091.436-1.091 1.296v4.079H3.197V5.522q0-1.288.66-2.046c.456-.505 1.052-.764 1.793-.764.856 0 1.504.328 1.933.983L8 4.39l.417-.695c.429-.655 1.077-.983 1.934-.983.74 0 1.336.259 1.791.764q.662.757.661 2.046z"/>
+        </svg>
+        @elmiko@fosstodon.org</a>
+      </p>
     </div>
   </div>
-</nav>
 
-<div class="container">
-  <div class="row">
-    <div class="col-md-9">
-    {{ content }}
-    </div>
-    <div class="col-md-3">
-      <div class="panel panel-default">
-        <div class="panel-body">
-          <p>
-          Michael McCune<br />
-          msm@opbstudios.com<br />
-          <a href="/bio">bio</a>
-          </p>
-          <p>
-          <a href="https://gitlab.com/elmiko">GitLab</a><br />
-          <a href="https://github.com/elmiko">GitHub</a><br />
-          <a rel="me" href="https://fosstodon.org/@elmiko">Mastodon</a><br/>
-          </p>
-        </div>
-      </div>
+  <div class="list-group">
+    <strong>Pinned</strong>
+    <a href="/in-support-of-human-cognition" class="pinned list-group-item">
+      <span>In Support of Human Cognition</span></a>
+  </div>
 
-      <div class="list-group">
-        <strong>Recent Posts</strong>
-          {% for post in site.posts offset:1 limit:3 %}
-          <a href="{{ post.url }}" class="list-group-item">
-            <span>{{ post.title }}</a>
-          <!--
-          <ul id="recent-posts" class="list-unstyled">
-            <li><a href="{{ post.url }}"><small>{{ post.title }}</small></a></li>
-          </ul>
-          -->
-          {% endfor %}
-      </div>
-    </div>
+  <div class="list-group">
+    <strong>Recent</strong>
+    {% for post in site.posts offset:1 limit:3 %}
+    <a href="{{ post.url }}" class="list-group-item">
+      <span>{{ post.title }}</a>
+    <!--
+      <ul id="recent-posts" class="list-unstyled">
+      <li><a href="{{ post.url }}"><small>{{ post.title }}</small></a></li>
+      </ul>
+    -->
+    {% endfor %}
   </div>
 </div>
-
-<div class="container-fluid footer">
-  <div class="row">
-    <div class="col-md-2">
-      <p><a href="#">Back to top</a></p>
-    </div>
-    <div class="col-md-8 text-center">
-      <p class="copyright">Copyright (c) Michael McCune</p>
-    </div>
-    <div class="col-md-2 text-right">
-      <p>Built with <a href="https://getbootstrap.com">Bootstrap</a></p>
-    </div>
-  </div>
-</div>
-
-<!-- JQuery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<!-- Bootstrap -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-<!-- local functions -->
-<script src="/js/main.js"></script>
-</body>
-</html>

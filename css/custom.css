@@ -48,6 +48,17 @@ pre.highlight {
     border-top: 1px solid #e7e7e7;
 }
 
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding-bottom: 4px;
+    background-color: #f8f8f8;
+    border-top: 1px solid #e7e7e7;
+    z-index: 1;
+}
+
 .navbar-nav > li > a.navbar-link {
     color: #428bca;
 }

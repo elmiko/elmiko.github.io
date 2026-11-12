@@ -90,7 +90,8 @@ I hope to accomplish two things in writing this expression of my thoughts:
 
 Signed,
 
-Michael McCune
+Michael McCune<br>
+19 October, 2026
 
 <br>
 
